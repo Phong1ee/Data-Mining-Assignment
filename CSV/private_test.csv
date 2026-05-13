@@ -1,0 +1,299 @@
+id,title,venue,year,authors,doi
+2491,Stopping Criteria for Value Iteration on Stochastic Games with Quantitative Objectives.,lics,2023,"Jan Křetínský, Tobias Meggendorfer, Maximilian Weininger",10.1109/lics56636.2023.10175771
+2707,A Complete Proof System for 1-Free Regular Expressions Modulo Bisimilarity.,lics,2020,"Clemens Grabmayer, Wan Fokkink",10.1145/3373718.3394744
+1248,Closed Predicates in Description Logics: Results on Combined Complexity.,kr,2016,"Shqiponja Ahmetaj, Magdalena Ortiz, Mantas Šimkus",https://www.semanticscholar.org/paper/dc1d9ef7a119616af46371d54c38ce07de8147d1
+1433,Data-Driven Verification of Procedural Programs with Integer Arrays.,cav,2025,"Ahmed Bouajjani, Wael-Amine Boutglay, Peter Habermehl",https://www.semanticscholar.org/paper/5ffa72d1c584830f2700d23e3dabc0a338818712
+2339,Reachability and Related Problems in Vector Addition Systems with Nested Zero Tests.,lics,2025,"Roland Guttenberg, Wojciech Czerwiński, Sławomir Lasota",10.1109/lics65433.2025.00050
+773,On the Expressive Power of Intermediate and Conditional Effects in Temporal Planning.,kr,2022,"Nicola Gigante, Andrea Micheli, Enrico Scala",10.24963/kr.2022/18
+1330,State Transition in Multi-agent Epistemic Domains Using Answer Set Programming.,lpnmr,2022,"Yusuf Izmirlioglu, Loc Pham, Tran Cao Son, Enrico Pontelli",https://www.semanticscholar.org/paper/ece549f0a85b89eb24404c87dd5e9b8831eb6603
+1561,The Top-Down Solver Verified: Building Confidence in Static Analyzers.,cav,2024,"Yannick Stade, Sarah Tilscher, Helmut Seidl",https://www.semanticscholar.org/paper/7c5eb2a1a77ebbf8d2d07eb2972618e041c6b429
+1904,Validation of Abstract Side-Channel Models for Computer Architectures.,cav,2020,"Hamed Nemati, Pablo Buiras, Andreas Lindner, Roberto Guanciale, Swen Jacobs",10.1007/978-3-030-53288-8_12
+912,Ordinal Polymatrix Games with Incomplete Information.,kr,2020,"Nahla Ben Amor, Hélène Fargier, Régis Sabbadin, Meriem Trabelsi",10.24963/kr.2020/11
+2420,Relevant S is Undecidable.,lics,2024,Søren Brinck Knudstorp,10.1145/3661814.3662128
+888,Living Without Beth and Craig: Explicit Definitions and Interpolants without Beth Definability and Craig Interpolation (Abstract of Invited Talk).,kr,2021,"Jean Christoph Jung, Frank Wolter",https://www.semanticscholar.org/paper/82de3e258fcbd5064399de562c4c19bd268c62dc
+1780,Fast Computation of Strong Control Dependencies.,cav,2021,"Marek Chalupa, David Klas̆ka, Jan Strejček, Lukás̆ Tomovic̆",10.1007/978-3-030-81688-9_41
+1395,The Design of the Seventh Answer Set Programming Competition.,lpnmr,2017,"MARTIN GEBSER, MARCO MARATEA, FRANCESCO RICCA",https://www.semanticscholar.org/paper/b6f67ac7b05c7c3a8d2eb2fc8e62e8cb652f424b
+2551,Temporal Team Semantics Revisited.,lics,2022,"Jens  Oliver Gutsfeld, Christoph Ohrem, Arne Meier, Jonni Virtema",10.2139/ssrn.5385646
+1778,Pre-deployment Security Assessment for Cloud Services Through Semantic Reasoning.,cav,2021,"Claudia Cauli, Meng Li, Nir Piterman, Oksana Tkachuk",10.1007/978-3-030-81685-8_36
+2060,Driver Drowsiness Detection through a Vehicle&apos;s Active Probe Action.,cav,2019,"Sen Yang, Junqiang Xi, Wenshuo Wang",https://www.semanticscholar.org/paper/47db353da48a84e07817f2ae00ec10cc7627bed7
+2834,Efficient Algorithms for Asymptotic Bounds on Termination Time in VASS.,lics,2018,"Tomáš Brázdil, Krishnendu Chatterjee, Antonín Kučera, Petr Novotný, Dominik Velan, Florian Zuleger",10.1145/3209108.3209191
+2089,Formal Reasoning About the Security of Amazon Web Services.,cav,2018,Byron Cook,https://www.semanticscholar.org/paper/3030d08a758a289a87eb4eb6e99d3cdd79f3a4f5
+744,"Proceedings of the 20th International Conference on Principles of Knowledge Representation and Reasoning, KR 2023, Rhodes, Greece, September 2-8, 2023.",kr,2023,,https://www.semanticscholar.org/paper/884df898fdf141a3fe29b654aecd4be30177b7ce
+2205,Program Verification Under Weak Memory Consistency Using Separation Logic.,cav,2017,Viktor Vafeiadis,10.1007/978-3-319-63387-9_2
+2156,Learning a Static Analyzer from Data.,cav,2017,,https://www.semanticscholar.org/paper/18fc2aa116bf0d6a54eb658932146857ebe229cb
+1229,On Partial Information and Contradictions in Probabilistic Abstract Argumentation.,kr,2016,", Justin Picard",https://www.semanticscholar.org/paper/d33d743cc1b7fca9d7bd478e3b841005137dfa59
+963,SAT-Based ATL Satisfiability Checking.,kr,2020,"Magdalena Kacprzak, Artur Niewiadomski, Wojciech Penczek",10.24963/kr.2020/54
+2769,Completeness for Game Logic.,lics,2019,"Sebastian Enqvist, Helle Hvid Hansen, Clemens Kupke, Johannes Marti, Yde Venema",10.1109/lics.2019.8785676
+885,DatalogMTL with Negation Under Stable Models Semantics.,kr,2021,"Przemysław A. Wałęga, David J. Tena Cucala, Egor V. Kostylev, Bernardo Cuenca Grau",10.24963/kr.2021/58
+2712,Modal Intuitionistic Logics as Dialgebraic Logics.,lics,2020,"Jim de Groot, Dirk Pattinson",10.1145/3373718.3394807
+2657,Parametricity and Semi-Cubical Types.,lics,2021,Hugo Moeneclaey,10.1109/lics52264.2021.9470728
+1545,Dynamic Programming for Symbolic Boolean Realizability and Synthesis.,cav,2024,"Yi Lin, Lucas Martinelli Tabajara, Moshe Y. Vardi",https://www.semanticscholar.org/paper/d2e8d7c6da4d0de8a6f4508f422aeaf7e223b0b0
+1509,"Computer Aided Verification - 37th International Conference, CAV 2025, Zagreb, Croatia, July 23-25, 2025, Proceedings, Part IV",cav,2025,,https://www.semanticscholar.org/paper/59f4f48a0688ae14ff4061a0a0473c0e38722be1
+1791,Summing up Smart Transitions.,cav,2021,,https://www.semanticscholar.org/paper/f0c30a6ee38fd9678b99b84dc42202646b29fc07
+2322,Recognisability Equals Definability for Finitely Representable Matroids of Bounded Path-Width.,lics,2025,"Rutger Campbell, Bruno Guillon, Mamadou Moustapha Kanté, Eun Jung Kim, Sang-il Oum",10.1109/lics65433.2025.00057
+1838,Synthesizing Invariant Barrier Certificates via Difference-of-Convex Programming.,cav,2021,"Qiuye Wang, Mingshuai Chen, Bai Xue, Naijun Zhan, Joost-Pieter Katoen",10.1007/978-3-030-81685-8_21
+749,Discovering User-Interpretable Capabilities of Black-Box Planning Agents.,kr,2022,"Pulkit Verma, Shashank Rao Marpally, Siddharth Srivastava",10.24963/kr.2022/36
+947,A Data Complexity and Rewritability Tetrachotomy of Ontology-Mediated Queries with a Covering Axiom.,kr,2020,"Olga Gerasimova, Stanislav Kikot, Agi Kurucz, Vladimir Podolskii, Michael Zakharyaschev",10.24963/kr.2020/41
+981,µ-toksia: An Efficient Abstract Argumentation Reasoner.,kr,2020,"Andreas Niskanen, Matti Järvisalo",10.24963/kr.2020/82
+2471,Commutativity in Automated Verification.,lics,2023,Azadeh Farzan,10.1109/lics56636.2023.10175734
+2180,Model-Checking Linear-Time Properties of Parametrized Asynchronous Shared-Memory Pushdown Systems.,cav,2017,"Marie Fortin, Anca Muscholl, Igor Walukiewicz",10.1007/978-3-319-63390-9_9
+1895,Global Guidance for Local Generalization in Model Checking.,cav,2020,"Hari Govind Vediramana Krishnan, YuTing Chen, Sharon Shoham, Arie Gurfinkel",https://www.semanticscholar.org/paper/2c1ed921a3dab96ea6204f666097c711ef097816
+2113,Delta-Decision Procedures for Exists-Forall Problems over the Reals.,cav,2018,"Soonho Kong, Armando Solar-Lezama, Sicun Gao",10.1007/978-3-319-96142-2_15
+1255,Cognitive Affordance Representations in Uncertain Logic.,kr,2016,John Dinsmore,https://www.semanticscholar.org/paper/4b641e3b235bd59601228774d1d9fe0457881d0a
+1893,TarTar: A Timed Automata Repair Tool.,cav,2020,"Martin Kölbl, Stefan Leue, Thomas Wies",10.1007/978-3-030-53288-8_25
+2277,End-to-End Verification of Processors with ISA-Formal.,cav,2016,"Alastair Reid, Rick Chen, Anastasios Deligiannis, David Gilday, David Hoyes, Will Keen, Ashan Pathirane, Owen Shepherd, Peter Vrabel, Ali Zaidi",https://www.semanticscholar.org/paper/87d2c402e203f74edbd28c56acfbc6957d7f3e6e
+1955,Sequence Prediction-based Proactive Caching in Vehicular Content Networks.,cav,2020,"Qiao Wang, David Grace",10.1109/cavs51000.2020.9334683
+2346,Initial Algebra Correspondence under Reachability Conditions.,lics,2025,"Mayuko Kori, Kazuki Watanabe, Jurriaan Rot",10.1109/lics65433.2025.00013
+2871,Diagrammatic Reasoning beyond Clifford+T Quantum Mechanics.,lics,2018,"Emmanuel Jeandel, Simon Perdrix, Renaud Vilmart",10.1145/3209108.3209139
+874,Representing and Reasoning with Event Models for Epistemic Planning.,kr,2021,"David Rajaratnam, Michael Thielscher",10.24963/kr.2021/49
+2589,Decidability and Complexity in Weakening and Contraction Hypersequent Substructural Logics.,lics,2021,"A. R. Balasubramanian, Timo Lang, Revantha Ramanayake",10.1109/lics52264.2021.9470733
+1616,Efficient Sensitivity Analysis for Parametric Robust Markov Chains.,cav,2023,"Thom Badings, Sebastian Junges, Ahmadreza Marandi, Ufuk Topcu, Nils Jansen",https://www.semanticscholar.org/paper/da4e79fb9d68b02278b2640c53ec38193d9b80b2
+2653,A distributed operational view of Reversible Prime Event Structures.,lics,2021,"Hernan Melgratti, Claudio Antares Mezzina, G. Michele Pinna",10.1109/lics52264.2021.9470623
+2305,"Learning Weighted Automata over Number Rings, Concretely and Categorically.",lics,2025,"Quentin Aristote, Sam van Gool, Daniela Petrişan, Mahsa Shirmohammadi",10.1109/lics65433.2025.00038
+2357,Flipping and Forking.,lics,2025,"Wojciech Przybyszewski, Szymon Toruńczyk",10.1109/lics65433.2025.00070
+1890,Parameterized Verification of Systems with Global Synchronization and Guards.,cav,2020,"Nouraldin Jaber, Swen Jacobs, Christopher Wagner, Milind Kulkarni, Roopsha Samanta",10.1007/978-3-030-53288-8_15
+1701,Playing Against Fair Adversaries in Stochastic Games with Total Rewards.,cav,2022,"Pablo F. Castro, Pedro R. D’Argenio, Ramiro Demasi, Luciano Putruele",https://www.semanticscholar.org/paper/5f6953c9b80d108f44eb114ab2aca0787d77a4b0
+3005,Data Communicating Processes with Unreliable Channels.,lics,2016,"Parosh Aziz Abdulla, C. Aiswarya, Mohamed Faouzi Atig",10.1145/2933575.2934535
+2591,The Topological Mu-Calculus: completeness and decidability.,lics,2021,"Alexandru Baltag, Nick Bezhanishvili, David Fernandez-Duque",10.1109/lics52264.2021.9470560
+2148,Ensuring the Reliability of Your Model Checker: Interval Iteration for Markov Decision Processes.,cav,2017,"Christel Baier, Joachim Klein, Linda Leuschner, David Parker, Sascha Wunderlich",10.1007/978-3-319-63387-9_8
+1623,Learning Assumptions for Compositional Verification of Timed Automata.,cav,2023,"Hanyue Chen, Yu Su, Miaomiao Zhang, Zhiming Liu, Junri Mi",https://www.semanticscholar.org/paper/e43a8446d86bc2b634094309aaae5c52f5732140
+2410,"Braids, Twists, Trace and Duality in Combinatory Algebras.",lics,2024,"Masahito Hasegawa, Serge Lechenne",10.1145/3661814.3662098
+2165,Automated Recurrence Analysis for Almost-Linear Expected-Runtime Bounds.,cav,2017,"Krishnendu Chatterjee, Hongfei Fu, Aniket Murhekar",10.1007/978-3-319-63387-9_6
+3063,How unprovable is Rabin&apos;s decidability theorem?,lics,2016,"Leszek Aleksander Kołodziejczyk, Henryk Michalewski",https://www.semanticscholar.org/paper/67e9018a610320495392eed7d3cec022b8ad2a16
+2535,The boundedness and zero isolation problems for weighted automata over nonnegative rationals.,lics,2022,"Wojciech Czerwiński, Engel Lefaucheux, Filip Mazowiecki, David Purser, Markus Whiteland",10.1145/3531130.3533336
+1222,Generalized Consistent Query Answering under Existential Rules.,kr,2016,", Michaël Thomazo",https://www.semanticscholar.org/paper/0102791e9d0873aed705bf1bfa9789ef8f8f199a
+1816,An SMT Encoding of LLVM&apos;s Memory Model for Bounded Translation Validation.,cav,2021,"Juneyoung Lee, Dongjoo Kim, Chung-Kil Hur, Nuno P. Lopes",https://www.semanticscholar.org/paper/a6e5d00fbaaae718899ce11369ae5b4384d777af
+1700,Neural Network Robustness as a Verification Property: A Principled Case Study.,cav,2022,"Marco Casadio, Ekaterina Komendantskaya, Matthew L. Daggitt, Wen Kokke, Guy Katz, Guy Amir, Idan Refaeli",https://www.semanticscholar.org/paper/d216ee1c351486100aa5d93009075275c19715e6
+811,Resolution-Based Uniform Interpolation for Multi-Agent Modal Logic Kn.,kr,2021,"Andreas Herzig, Jérôme Mengin",https://www.semanticscholar.org/paper/d058351114ccce850ea88a7d6b6e8bfe61f393e7
+2639,Living without Beth and Craig: Definitions and Interpolants in the Guarded and Two-Variable Fragments.,lics,2021,"Jean Christoph Jung, Frank Wolter",10.1109/lics52264.2021.9470585
+2208,Starling: Lightweight Concurrency Verification with Views.,cav,2017,"Matt Windsor, Mike Dodds, Ben Simner, Matthew J. Parkinson",10.1007/978-3-319-63387-9_27
+2538,Efficient Construction of Reversible Transducers from Regular Transducer Expressions.,lics,2022,"Luc Dartois, Paul Gastin, Govind, Krishna",10.1145/3531130.3533364
+1087,Argumentation for Explainable Reasoning with Conflicting Medical Recommendations.,kr,2018,"Leila Amgoud, Souhila Kaci",https://www.semanticscholar.org/paper/020ecb9647893f4a6214430fa45a52aa0b7130cb
+1662,Symbolic Quantum Simulation with Quasimodo.,cav,2023,"Meghana Sistla, Swarat Chaudhuri, Thomas Reps",https://www.semanticscholar.org/paper/940b207e77508fc57c8ad02593d73d2e60638db2
+3077,A bifibrational reconstruction of Lawvere&apos;s presheaf hyperdoctrine.,lics,2016,"Paul-André Melliès, Noam Zeilberger",https://ceur-ws.org/Vol-3799/abstract2GDE24.pdf
+2917,The equivalence of two dichotomy conjectures for infinite domain constraint satisfaction problems.,lics,2017,"Libor Barto, Michael Kompatscher, Miroslav Olsak, Trung Van Pham, Michael Pinsker",10.1109/lics.2017.8005128
+1922,fault: A Python Embedded Domain-Specific Language for Metaprogramming Portable Hardware Verification Components.,cav,2020,"Lenny Truong, Steven Herbst, Rajsekhar Setaluri, Makai Mann, Ross Daly, Keyi Zhang, Caleb Donovick, Daniel Stanley, Mark Horowitz, Clark Barrett, Pat Hanrahan",10.1007/978-3-030-53288-8_19
+2866,Quasi-Open Bisimilarity with Mismatch is Intuitionistic.,lics,2018,"Ross Horne, Ki Yung Ahn, Shang-wei Lin, Alwen Tiu",10.1145/3209108.3209125
+2691,First-order tree-to-tree functions.,lics,2020,"Mikołaj Bojańczyk, Amina Doumane",10.1145/3373718.3394785
+1557,Inner-Approximate Reachability Computation via Zonotopic Boundary Analysis.,cav,2024,"Dejin Ren, Zhen Liang, Chenyu Wu, Jianqiang Ding, Taoran Wu, Bai Xue",https://www.semanticscholar.org/paper/1b19f89c8c56c64d656604a80ff4a8ead35b20db
+1896,Decidable Synthesis of Programs with Uninterpreted Functions.,cav,2020,"Paul Krogmeier, Umang Mathur, Adithya Murali, P. Madhusudan, Mahesh Viswanathan",10.1007/978-3-030-53291-8_32
+2247,"Parsimonious, Simulation Based Verification of Linear Systems.",cav,2016,"Parasara Sridhar Duggirala, Mahesh Viswanathan",10.1007/978-3-319-41528-4_26
+2583,The Space of Interaction.,lics,2021,,https://www.semanticscholar.org/paper/921a589e65772caa5a3ee3cad736958f66e8dff2
+2893,On the number of types in sparse graphs.,lics,2018,"Michał Pilipczuk, Sebastian Siebertz, Szymon Toruńczyk",10.1145/3209108.3209178
+1126,golog++ : An Integrative System Design.,kr,2018,"Maximillian Kirsch, Shubham Pawar, Alexander Ferrein, Stefan Schiffer",https://www.semanticscholar.org/paper/707303b221d5936736411eb1190bc7bc6e032575
+2877,Around Classical and Intuitionistic Linear Logics.,lics,2018,Olivier Laurent,10.1145/3209108.3209132
+1332,Towards Provenance in Heterogeneous Knowledge Bases.,lpnmr,2022,"Matthias Knorr, Carlos Viegas Damásio, Ricardo Gonçalves, João Leite",https://www.semanticscholar.org/paper/aa8b2bcef1296a62639b57cb4f508c2a71f4d2a3
+2209,CTL* synthesis via LTL synthesis.,cav,2017,"Roderick Bloem, Sven Schewe, Ayrat Khalimov",10.4204/eptcs.260.4
+2460,"Central Submonads and Notions of Computation: Soundness, Completeness and Internal Languages.",lics,2023,"Titouan Carette, Louis Lemonnier, Vladimir Zamdzhiev",10.1109/lics56636.2023.10175687
+1054,Dealing with Conceptual Indeterminacy: A Framework Based on Supervaluation Semantics.,kr,2018,,https://www.semanticscholar.org/paper/dd7c057ba0e2a201bf5466beaa2038d7cb965199
+1455,Raven: An SMT-Based Concurrency Verifier.,cav,2025,"Ekanshdeep Gupta, Nisarg Patel, Thomas Wies",10.1007/978-3-031-98668-0_4
+2292,Approaching Symbolic Parallelization by Synthesis of Recurrence Decompositions.,cav,2016,"Grigory Fedyukovich, Rastislav Bodík",10.4204/eptcs.229.6
+1753,"Computer Aided Verification - 34th International Conference, CAV 2022, Haifa, Israel, August 7-10, 2022, Proceedings, Part I",cav,2022,,https://www.semanticscholar.org/paper/a64a25c5f8da9ef27b517ec4bbc5ec483cc57e47
+2793,Template games and differential linear logic.,lics,2019,Paul-Andre Mellies,10.1109/lics.2019.8785830
+2190,A Correct-by-Decision Solution for Simultaneous Place and Route.,cav,2017,Alexander Nadel,10.1007/978-3-319-63390-9_23
+2848,Regular Transducer Expressions for Regular Transformations.,lics,2018,"Vrunda Dave, Paul Gastin, Shankara Narayanan Krishna",https://www.semanticscholar.org/paper/1477683f0c3221f71945b1358609749f73f76581
+1813,Decision Tree Learning in CEGIS-Based Termination Analysis.,cav,2021,"Satoshi Kura, Hiroshi Unno, Ichiro Hasuo",10.1007/978-3-030-81688-9_4
+1907,"Tezla, an Intermediate Representation for Static Analysis of Michelson Smart Contracts.",cav,2020,,https://www.semanticscholar.org/paper/78bff35085520e0c8d89d3518d1fcfc907c70911
+940,A Preference-Based Approach to Defeasible Deontic Inference.,kr,2020,James Delgrande,10.24963/kr.2020/33
+2066,"Numerical Software Verification - 12th International Workshop, NSV@CAV 2019, New York City, NY, USA, July 13-14, 2019, Proceedings",cav,2019,,https://www.semanticscholar.org/paper/b44035b5551d06005c9c1a2d16743edec1e1800e
+2304,"Logical relations for call-by-push-value models, via internal fibrations in a 2-category.",lics,2025,"Pedro H. Azevedo de Amorim, Satoshi Kura, Philip Saville",10.1109/lics65433.2025.00061
+2211,A Class of Control Certificates to Ensure Reach-While-Stay for Switched Systems.,cav,2017,"Hadi Ravanbakhsh, Sriram Sankaranarayanan",10.4204/eptcs.260.6
+1464,StatWhy: Formal Verification Tool for Statistical Hypothesis Testing Programs.,cav,2025,"Yusuke Kawamoto, Kentaro Kobayashi, Kohei Suenaga",https://www.semanticscholar.org/paper/835c6b72fa97fa1f47c838813e60c7b75edf7067
+1337,Pinpointing Axioms in Ontologies via ASP.,lpnmr,2022,"Rafael Peñaloza, Francesco Ricca",https://www.semanticscholar.org/paper/03db4890c9eb70f226ed07a76d4b545a2c02aa19
+1592,Minimal Logic Detection and Exporting SMTLIB Problems with Dolmen.,cav,2024,G. Chibrikov,https://www.semanticscholar.org/paper/6fb58d1d5b959b238ee5e87fa4666a126d4a68f3
+2805,Lambda Y-Calculus With Priorities.,lics,2019,Igor Walukiewicz,10.1109/lics.2019.8785674
+1764,Isla: Integrating Full-Scale ISA Semantics and Axiomatic Concurrency Models.,cav,2021,"Alasdair Armstrong, Brian Campbell, Ben Simner, Christopher Pulte, Peter Sewell",https://www.semanticscholar.org/paper/88b98c5febf581087c9cbeb333a53902f7b9e32f
+1195,Online Situation-Determined Agents and their Supervision.,kr,2016,"Giuseppe De Giacomo, Yves Lespérance, Christian Muise",https://www.semanticscholar.org/paper/02cc81024bdf5690867a3561c848238bcddee380
+2486,A categorical account of composition methods in logic.,lics,2023,"Tomáš Jakl, Dan Marsden, Nihil Shah",10.1109/lics56636.2023.10175751
+1988,Quantified Invariants via Syntax-Guided Synthesis.,cav,2019,"Grigory Fedyukovich, Sumanth Prabhu, Kumar Madhukar, Aarti Gupta",10.1007/978-3-030-25540-4_14
+770,Compound Conditionals as Random Quantities and Boolean Algebras.,kr,2022,"Tommaso Flaminio, Angelo Gilio, Lluis Godo, Giuseppe Sanfilippo",10.24963/kr.2022/15
+2153,On Multiphase-Linear Ranking Functions.,cav,2017,Zixuan Chen,https://www.semanticscholar.org/paper/b6be6a0f73efd1b065babc82f6da3c4c107d66a1
+1615,Automated Analyses of IOT Event Monitoring Systems.,cav,2023,"Andrew Apicelli, Sam Bayless, Ankush Das, Andrew Gacek, Dhiva Jaganathan, Saswat Padhi, Vaibhav Sharma, Michael W. Whalen, Raveesh Yadav",https://www.semanticscholar.org/paper/519f28e997f58218c2fcc740c7805764b35b3d6c
+2497,A Metalanguage for Cost-Aware Denotational Semantics.,lics,2023,"Yue Niu, Robert Harper",10.1109/lics56636.2023.10175777
+2103,Model Checking Quantitative Hyperproperties.,cav,2018,"Tzu-Han Hsu, Cesar Sanchez, Borzoo Bonakdarpour",https://www.semanticscholar.org/paper/d6d07aff758456f52fae02787bedffeb5e28562c
+1540,The SemGuS Toolkit.,cav,2024,"Keith J. C. Johnson, Andrew Reynolds, Thomas Reps, Loris D’Antoni",10.1007/978-3-031-65633-0_2
+1013,Design and Analysis of Cryptographic Algorithms for Authentication.,kr,2019,"G. Lebovitz, E. Rescorla",https://www.semanticscholar.org/paper/e2f233156bc8a4b6de43907da7b0bfa4774ecfe9
+868,Strategic Reasoning in Automated Mechanism Design.,kr,2021,"Bastien Maubert, Munyque Mittelmann, Aniello Murano, Laurent Perrussel",10.24963/kr.2021/46
+1150,Propositional Belief Merging with OWA Operators.,kr,2018,"Creignou Nadia, Papini Odile, R&uuml;mmele Stefan, Woltran Stefan",https://www.semanticscholar.org/paper/10b763b31c054c5583e322c5d434e0ae077eff3d
+2188,Cutoff Bounds for Consensus Algorithms.,cav,2017,"Ognjen Marić, Christoph Sprenger, David Basin",10.1007/978-3-319-63390-9_12
+2282,Limit-Deterministic Büchi Automata for Linear Temporal Logic.,cav,2016,"Javier Esparza, Jan Křetínský, Jean-François Raskin, Salomon Sickert",https://www.semanticscholar.org/paper/f585119a003b2e77600a12c1d251e2ec8a7e0817
+1157,Can Verification of Cryptographic Libraries be liberated from the von Neumann Style?,kr,2018,John Backus,https://www.semanticscholar.org/paper/7a8ba4a334239b39ee8564b0226383a89571bc0b
+2826,A universal-algebraic proof of the complexity dichotomy for Monotone Monadic SNP.,lics,2018,"Manuel Bodirsky, Florent Madelaine, Antoine Mottet",10.1145/3209108.3209156
+2400,A proof theory of right-linear (ω-)grammars via cyclic proofs.,lics,2024,"Anupam Das, Abhishek De",10.1145/3661814.3662138
+2855,Playing with Repetitions in Data Words Using Energy Games.,lics,2018,"Diego Figueira, Anirban Majumdar, M. Praveen",10.23638/lmcs-16(3:1)2020
+2570,Characterizing Positionality in Games of Infinite Duration over Infinite Graphs.,lics,2022,Pierre Ohlmann,10.46298/theoretics.23.3
+2154,Pithya: A Parallel Tool for Parameter Synthesis of Piecewise Multi-affine Dynamical Systems.,cav,2017,"Nikola Beneš, Luboš Brim, Martin Demko, Samuel Pastva, David Šafránek",10.1007/978-3-319-63387-9_29
+2676,A Higher Structure Identity Principle.,lics,2020,"Benedikt Ahrens, Paige Randall North, Michael Shulman, Dimitris Tsementzis",10.1145/3373718.3394755
+2931,Understanding the complexity of #SAT using knowledge compilation.,lics,2017,Florent Capelli,10.1109/lics.2017.8005121
+2518,Varieties of Quantitative Algebras and Their Monads.,lics,2022,Jiri Adamek,10.1145/3531130.3532405
+2409,Declassification Policy for Program Complexity Analysis.,lics,2024,"Emmanuel Hainry, Bruce Kapron, Jean-Yves Marion, Romain Péchoux",10.1145/3661814.3662100
+2844,Probabilistic Stable Functions on Discrete Cones are Power Series.,lics,2018,Raphaëlle Crubillé,10.1145/3209108.3209198
+1632,Formula Normalizations in Verification.,cav,2023,"Simon Guilloud, Mario Bucev, Dragana Milovančević, Viktor Kunčak",https://www.semanticscholar.org/paper/57a814333c92bb8f67d3e51cfdce4dd898d80dae
+2161,Syntax-Guided Optimal Synthesis for Chemical Reaction Networks.,cav,2017,"Luca Cardelli, Milan Češka, Martin Fränzle, Marta Kwiatkowska, Luca Laurenti, Nicola Paoletti, Max Whitby",10.1007/978-3-319-63390-9_20
+937,Lightweight Parallel Multi-Agent Epistemic Planning.,kr,2020,"Martin Cooper, Andreas Herzig, Frédéric Maris, Elise Perrotin, Julien Vianey",10.24963/kr.2020/28
+2438,From Quantifier Depth to Quantifier Number: Separating Structures with k Variables.,lics,2024,Harry Vinall-Smeeth,10.1145/3661814.3662125
+2822,Stochastic Shortest Paths and Weight-Bounded Properties in Markov Decision Processes.,lics,2018,"Christel Baier, Nathalie Bertrand, Clemens Dubslaff, Daniel Gburek, Ocan Sankur",10.1145/3209108.3209184
+1510,"Proceedings of the 12th Workshop on Horn Clauses for Verification and Synthesis, HCVS@CAV 2025, Zagreb, Croatia, 22 July 2025.",cav,2025,"Hongjian Jiang, Anthony W. Lin, Oliver Markgraf, Philipp Rümmer, Daniel Stan",https://www.semanticscholar.org/paper/6a2c93fd9503a3e741bc41ddf0920382f9764190
+3079,Reasoning about Recursive Probabilistic Programs.,lics,2016,"Federico Olmedo, Benjamin Lucien Kaminski, Joost-Pieter Katoen, Christoph Matheja",10.1145/2933575.2935317
+1733,Self-correcting Neural Networks for Safe Classification.,cav,2022,"V. Kurkova, P.C. Kainen",https://www.semanticscholar.org/paper/3a9ba92037043295e707da1f6e63af25819b3505
+1122,Computing Logic Programs with Ordered Disjunction Using asprin.,kr,2018,"Gerhard Brewka, Ilkka Niemelä, Tommi Syrjänen",10.1111/j.0824-7935.2004.00241.x
+1354,Diagnosing Data Pipeline Failures Using Action Languages.,lpnmr,2019,"Alex Brik, Jeffrey Xu",https://www.semanticscholar.org/paper/187ba70179288e8761f143fe84508fc17e727889
+1133,Query Answering for Rough EL Ontologies.,kr,2018,Patrick Koopmann,https://www.semanticscholar.org/paper/fb3ee54a0f4611c89c0f6b7861017ef7844ff26c
+1254,Implicit Hitting Set Algorithms for Reasoning Beyond NP.,kr,2016,"Katalin Fazekas, Fahiem Bacchus, Armin Biere",https://www.semanticscholar.org/paper/e15e21702a1938a89cb4b394638f129d97e0059a
+2057,Towards Bridging the Gap between Modern and Legacy Automotive ECUs: A Software-Based Security Framework for Legacy ECUs.,cav,2019,"Ashok Samraj Thangarajan, Mahmoud Ammar, Bruno Crispo, Danny Hughes",10.1109/cavs.2019.8887788
+1178,DATA - Differential Address Trace Analysis.,kr,2018,"A. Fox, T. Grun",https://www.semanticscholar.org/paper/4640ed868e9011164c9dd94ad9883e2529180e1a
+2122,Exploiting Synchrony and Symmetry in Relational Verification.,cav,2018,"Lauren Pick, Grigory Fedyukovich, Aarti Gupta",10.1007/978-3-319-96145-3_9
+1342,Towards Causality-Based Conflict Resolution in Answer Set Programs.,lpnmr,2022,"Andre Thevapalan, Konstantin Haupt, Gabriele Kern-Isberner",10.1007/978-3-031-15707-3_27
+1803,Verisig 2.0: Verification of Neural Network Controllers Using Taylor Model Preconditioning.,cav,2021,"Radoslav Ivanov, Taylor Carpenter, James Weimer, Rajeev Alur, George Pappas, Insup Lee",10.1007/978-3-030-81685-8_11
+2967,A weakest pre-expectation semantics for mixed-sign expectations.,lics,2017,"Benjamin Lucien Kaminski, Joost-Pieter Katoen",10.1109/lics.2017.8005153
+959,Reasoning with Inconsistent Knowledge using the Epistemic Approach to Probabilistic Argumentation.,kr,2020,Anthony Hunter,10.24963/kr.2020/50
+1143,Omission-Based Abstraction for Answer Set Programs.,kr,2018,"ZEYNEP G. SARIBATUR, THOMAS EITER",10.1017/s1471068420000095
+2868,Unification nets: canonical proof net quantifiers.,lics,2018,Dominic J. D. Hughes,https://www.semanticscholar.org/paper/c4e353d3a8a60bb9f8bd0a253b8b87f77cbc91e4
+2030,Reinforcement Learning and Formal Requirements.,cav,2019,,https://www.semanticscholar.org/paper/dc1fba9fabd4a2d5531b7b74d12c073ce407f2db
+1110,Updating Belief in Arguments in Epistemic Graphs.,kr,2018,Matthias Steup,https://www.semanticscholar.org/paper/dde823250145eaa040eabba281fa4b396d6cdb30
+784,Ontology-Mediated Querying on Databases of Bounded Cliquewidth.,kr,2022,"Carsten Lutz, Leif Sabellek, Lukas Schulze",10.24963/kr.2022/25
+2900,Logical paradoxes in quantum computation.,lics,2018,Nadish de Silva,10.1145/3209108.3209123
+2709,Successor-Invariant First-Order Logic on Classes of Bounded Degree.,lics,2020,Julien Grange,10.46298/lmcs-17(3:20)2021
+3015,Hybrid realizability for intuitionistic and classical choice.,lics,2016,Valentin Blot,10.1145/2933575.2934511
+1186,Infinite Paths in the Situation Calculus: Axiomatization and Properties.,kr,2016,Louise Schmir Hay,https://www.semanticscholar.org/paper/e1cc7d7573fee029e7d73b1d7da09eb082c03f2b
+2542,Reasoning on Data Words over Numeric Domains.,lics,2022,"Diego Figueira, Anthony Widjaja Lin",10.1145/3531130.3533354
+939,Fine-Grained Complexity of Temporal Problems.,kr,2020,"Konrad K. Dabrowski, Peter Jonsson, Sebastian Ordyniak, George Osipov",10.24963/kr.2020/29
+776,Inference with System W Satisfies Syntax Splitting.,kr,2022,"Jonas Haldimann, Christoph Beierle",10.24963/kr.2022/41
+2167,A Three-Tier Strategy for Reasoning About Floating-Point Numbers in SMT.,cav,2017,"Sylvain Conchon, Mohamed Iguernlala, Kailiang Ji, Guillaume Melquiond, Clément Fumex",10.1007/978-3-319-63390-9_22
+1944,Performance Analysis of Cellular-V2X with Adaptive &amp; Selective Power Control.,cav,2020,"Md Saifuddin, Mahdi Zaman, Behrad Toghi, Yaser P. Fallah, Jayanthi Rao",10.1109/cavs51000.2020.9334605
+1264,Generating Conflict-Free Treatments for Patients with Comorbidity Using Answer Set Programming.,kr,2016,"Elie Merhej, Steven Schockaert, T. Greg McKelvey, Martine De Cock",10.1007/978-3-319-55014-5_7
+999,"Proceedings of the 17th International Conference on Principles of Knowledge Representation and Reasoning, KR 2020, Rhodes, Greece, September 12-18, 2020.",kr,2020,"Erman Acar, Rafael Peñaloza",https://www.semanticscholar.org/paper/33c35cf64b96e65a8817b8329f381f14925513c9
+2130,Formal Verification of a Vehicle-to-Vehicle (V2V) Messaging System.,cav,2018,"Mark Tullsen, Lee Pike, Nathan Collins, Aaron Tomb",10.1007/978-3-319-96142-2_25
+2450,Computing the linear hull: Deciding Deterministic? and Unambiguous? for weighted automata over fields.,lics,2023,"Jason P. Bell, Daniel Smertnig",10.1109/lics56636.2023.10175691
+3028,Games with bound guess actions.,lics,2016,"Thomas Colcombet, Stefan Göller",10.1145/2933575.2934502
+3080,Solvability of Matrix-Exponential Equations.,lics,2016,"Joel Ouaknine, Amaury Pouly, Joao Sousa-Pinto, James Worrell",10.1145/2933575.2934538
+2059,Location Anomalies Detection for Connected and Autonomous Vehicles.,cav,2019,"Xiaoyang Wang, Ioannis Mavromatis, Andrea Tassi, Raul Santos-Rodriguez, Robert J. Piechocki",10.1109/cavs.2019.8887778
+1050,Variable Elimination for DLP-Functions.,kr,2018,,https://www.semanticscholar.org/paper/2295fa704e385be89d8090cd5fa67bef316ba764
+2136,SCInfer: Refinement-Based Verification of Software Countermeasures Against Side-Channel Attacks.,cav,2018,"Jun Zhang, Pengfei Gao, Fu Song, Chao Wang",10.1007/978-3-319-96142-2_12
+2078,A Direct Encoding for NNC Polyhedra.,cav,2018,"Anna Becchi, Enea Zaffanella",https://www.semanticscholar.org/paper/aa422e448b4f532829a639f5b787000b149a56db
+2428,Concurrent Games over Relational Structures: The Origin of Game Comonads.,lics,2024,"Yoàv Montacute, Glynn Winskel",10.1145/3661814.3662075
+2514,Solvability of orbit-finite systems of linear equations.,lics,2022,"Arka Ghosh, Piotr Hofman, Slawomir Lasota",10.1145/3531130.3533333
+2483,Higher-Dimensional Subdiagram Matching.,lics,2023,"Amar Hadzihasanovic, Diana Kessler",10.1109/lics56636.2023.10175726
+3053,Healthiness from Duality.,lics,2016,"Wataru Hino, Hiroki Kobayashi, Ichiro Hasuo, Bart Jacobs",10.1145/2933575.2935319
+2933,Foundation for a series of efficient simulation algorithms.,lics,2017,Gerard Cece,10.1109/lics.2017.8005069
+2408,Are Targeted Messages More Effective?,lics,2024,"Martin Grohe, Eran Rosenbluth",10.1145/3661814.3662093
+2889,MSO Queries on Trees: Enumerating Answers under Updates Using Forest Algebras.,lics,2018,"Sarah Kleest-Meißner, Jonas Marasus, Matthias Niewerth",10.46298/lmcs-21(4:2)2025
+1817,Porous Invariants.,cav,2021,"Osvaldo Guzmán, Michael Hrušák, Arturo Martinez-Celis",https://www.semanticscholar.org/paper/3b18bdeaf0e3c590687ea7c5ccfc9c7735e3221f
+1717,Shared Certificates for Neural Network Verification.,cav,2022,"Marc Fischer, Christian Sprecher, Dimitar Iliev Dimitrov, Gagandeep Singh, Martin Vechev",https://www.semanticscholar.org/paper/fcbe32249625c0101fcb8388a1bfa396d8e7df03
+2994,Generalised species of rigid resource terms.,lics,2017,"Takeshi Tsukada, Kazuyuki Asada, C.-H. Luke Ong",10.1109/lics.2017.8005093
+1736,A Cascade of Checkers for Run-time Certification of Local Robustness.,cav,2022,"Ravi Mangal, Corina Păsăreanu",https://www.semanticscholar.org/paper/cdb423d6f769a9a171fb6da8fba715fc792393d5
+1161,Comments On: Constant Time Modular Inversion.,kr,2018,Joppe W. Bos,https://www.semanticscholar.org/paper/46596f682911bfc1c109582041583c7bd75010a3
+1637,Unblocking Dynamic Partial Order Reduction.,cav,2023,"Michalis Kokologiannakis, Iason Marmanis, Viktor Vafeiadis",10.1007/978-3-031-37706-8_12
+1003,An Explainable Approach of Inferring Potential Medication Effects from Social Media Data.,kr,2019,"Keyuan Jiang, Tingyu Chen, Liyuan Huang, Ravish Gupta, Ricardo A. Calix, Gordon R. Bernard",10.1007/978-3-030-37446-4_7
+1673,Searching for i-Good Lemmas to Accelerate Safety Model Checking.,cav,2023,"Yechuan Xia, Anna Becchi, Alessandro Cimatti, Alberto Griggio, Jianwen Li, Geguang Pu",https://www.semanticscholar.org/paper/8739c826d13724100699683baffd8078696ef26b
+835,Measuring Inconsistency over Sequences of Business Rule Cases.,kr,2021,"Carl Corea, Matthias Thimm, Patrick Delfmann",10.24963/kr.2021/64
+824,Making DL-Lite Planning Practical.,kr,2021,"Stefan Borgwardt, Jörg Hoffmann, Alisa Kovtunova, Marcel Steinmetz",10.24963/kr.2021/61
+2905,A van Benthem Theorem for Fuzzy Modal Logic.,lics,2018,"Paul Wild, Lutz Schröder, Dirk Pattinson, Barbara König",10.1145/3209108.3209180
+1459,Charon: An Analysis Framework for Rust.,cav,2025,"Son Ho, Guillaume Boisseau, Lucas Franceschino, Yoann Prak, Aymeric Fromherz, Jonathan Protzenko",https://www.semanticscholar.org/paper/0a920df6b9ba8691cc6df784c0c66a2209057896
+879,Boolean Network Learning in Vector Spaces for Genome-wide Network Analysis.,kr,2021,"Taisuke Sato, Ryosuke Kojima",10.24963/kr.2021/53
+2052,On Calendar-Based Scheduling for User-Friendly Charging of Plug-In Electric Vehicles.,cav,2019,"Karl Schwenk, Manuel Faix, Ralf Mikut, Veit Hagenmeyer, Riccardo Remo Appino",10.1109/cavs.2019.8887782
+2397,An Analysis of Symmetry in Quantitative Semantics.,lics,2024,"Pierre Clairambault, Simon Forest",10.1145/3661814.3662092
+1837,NNrepair: Constraint-Based Repair of Neural Network Classifiers.,cav,2021,"Muhammad Usman, Divya Gopinath, Youcheng Sun, Yannic Noller, Corina S. Păsăreanu",https://www.semanticscholar.org/paper/29404657e3ac5cc0e704feefaceecdc588f3182b
+903,An Evolutionary Algorithm for Rule Learning over Knowledge Graphs.,kr,2020,"Hong Liu, Zhe Wang, Kewen Wang, Xiaowang Zhang, Zhiyong Feng",https://www.semanticscholar.org/paper/cc28f2744a8ab728ad6cb59d53ebdfce855b268b
+1567,Safe Exploration in Reinforcement Learning by Reachability Analysis over Learned Models.,cav,2024,"Yuning Wang, He Zhu",https://www.semanticscholar.org/paper/9d92fc477c2d8d16e545efafa670e52e86405282
+2692,Extensions of ω-Regular Languages.,lics,2020,,https://www.semanticscholar.org/paper/e53955f28dbb9768592cbc5575e8fe0621cf0bbf
+918,Balancing Expressiveness and Inexpressiveness in View Design.,kr,2020,"Michael Benedikt, Pierre Bourhis, Louis Jachiet, Efthymia Tsamoura",https://www.semanticscholar.org/paper/c3b19d9860bb6242f738d3bf57688c5355d9a5b4
+1937,CORR: Collaborative On-Road Reputation.,cav,2020,"Baik Hoh, Seyhan Ucar, Pratham Oza, Chinmaya Patnayak, Kentaro Oguchi",10.1109/cavs51000.2020.9334679
+2284,String Analysis via Automata Manipulation with Logic Circuit Representation.,cav,2016,"Hung-En Wang, Tzung-Lin Tsai, Chun-Han Lin, Fang Yu, Jie-Hong R. Jiang",10.1007/978-3-319-41528-4_13
+1066,If Nothing Is Accepted - Repairing Argumentation Frameworks.,kr,2018,"Markus Ulbricht, Ringo Baumann",https://www.semanticscholar.org/paper/298360b7d1b93ee124fdc8f43ef2edcb8ab994ef
+1164,Hardware Accelerated Sender Identification for the Controller Area Network.,kr,2018,"H. Shokry, M. Shedeed, S. Hammad, M. Shalan, A. Wahdan",https://www.semanticscholar.org/paper/a2a797cdd378fd88b2f63d3ee031c704f4558ab4
+1502,Finding Regular Herbrand Models for CHCs using Answer Set Programming.,cav,2025,"Gregoire Maire, Thomas Genet",https://www.semanticscholar.org/paper/cd0bf4a6fabfb4a898e957e7a20da49dc97f053a
+1629,Fast Approximations of Quantifier Elimination.,cav,2023,"Isabel Garcia-Contreras, V. K. Hari Govind, Sharon Shoham, Arie Gurfinkel",https://www.semanticscholar.org/paper/f2f0341a904b4ab139eab4ac6277ddcac2502759
+2475,Fixpoint operators for 2-categorical structures.,lics,2023,Zeinab Galal,10.1109/lics56636.2023.10175688
+1227,Parameterized Complexity Results for Symbolic Model Checking of Temporal Logics.,kr,2016,Ronald de Haan,https://www.semanticscholar.org/paper/079b2cc0f7d0e94d41703b47bff0f82c3cda6052
+1107,Preference Aggregation with Incomplete CP-Nets.,kr,2018,"Thomas Lukasiewicz, Enrico Malizia",https://www.semanticscholar.org/paper/bd98030e3226291aac51f22bcfeaa2ac452e0014
+878,Existential Abstraction on Argumentation Frameworks via Clustering.,kr,2021,"Zeynep G. Saribatur, Johannes P. Wallner",10.24963/kr.2021/52
+1887,Formal Specification and Verification of Solidity Contracts with Events (Short Paper).,cav,2020,,https://www.semanticscholar.org/paper/2d17d63001f0a4502d7df8f00c77c38914cf1c75
+1407,moviola: Interpreting Dynamic Logic Programs via Multi-shot Answer Set Programming.,lpnmr,2017,"Orkunt Sabuncu, João Leite",10.1007/978-3-319-61660-5_30
+1393,Backdoor Trees for Answer Set Programming.,lpnmr,2017,,https://www.semanticscholar.org/paper/3e5606525682b9be8f9741899dfe63f1ebff49d6
+1281,An ILASP-Based Approach to Repair Petri Nets.,lpnmr,2024,"Francesco Chiariello, Antonio Ielo, Alice Tarzariol",https://www.semanticscholar.org/paper/a34df843e5ffc451a42fd6781316fbe5567b75a5
+1800,Model Checking Finite-Horizon Markov Chains with Probabilistic Inference.,cav,2021,"Hailey Sparks, Krishnendu Ghosh",https://www.semanticscholar.org/paper/1e7219fa3fe7f9c492cfcb2cb5cea7ea09d8fbfa
+2689,The Complexity of Reachability in Affine Vector Addition Systems with States.,lics,2020,"Michael Blondin, Mikhail Raskin",10.46298/lmcs-17(3:3)2021
+2685,Modal Logics with Composition on Finite Forests: Expressivity and Complexity.,lics,2020,"Bartosz Bednarczyk, Stéphane Demri, Raul Fervari, Alessio Mansutti",10.1145/3373718.3394787
+2344,The Blurred Drinker Paradox: Constructive Reverse Mathematics of the Downward Löwenheim-Skolem Theorem.,lics,2025,"Dominik Kirst, Haoyi Zeng",10.1109/lics65433.2025.00073
+1556,From Clauses to Klauses.,cav,2024,"Joseph E. Reeves, Marijn J. H. Heule, Randal E. Bryant",10.1007/978-3-031-65627-9_6
+2484,Expressive Completeness of Two-Variable First-Order Logic with Counting for First-Order Logic Queries on Rooted Unranked Trees.,lics,2023,"Jelle Hellings, Marc Gyssens, Jan Van Den Bussche, Dirk Van Gucht",10.1109/lics56636.2023.10175828
+2843,Strong Sums in Focused Logic.,lics,2018,Karl Crary,10.1145/3209108.3209145
+1182,"28. Krypto-Tag, Kirchheim bei München, Germany, June 7-8, 2018",kr,2018,,https://www.semanticscholar.org/paper/c429cde90f6371d35f3f4582aa4a4555168f0a30
+1865,Seminator 2 Can Complement Generalized Büchi Automata via Improved Semi-determinization.,cav,2020,"František Blahoudek, Alexandre Duret-Lutz, Jan Strejček",10.1007/978-3-030-53291-8_2
+751,Embed2Sym - Scalable Neuro-Symbolic Reasoning via Clustered Embeddings.,kr,2022,"Yaniv Aspis, Krysia Broda, Jorge Lobo, Alessandra Russo",10.24963/kr.2022/44
+809,Reasoning about Explanations for Non-validation in SHACL.,kr,2021,"Shqiponja Ahmetaj, Robert David, Magdalena Ortiz, Axel Polleres, Bojken Shehu, Mantas Šimkus",10.24963/kr.2021/2
+818,Correcting Hierarchical Plans by Action Deletion.,kr,2021,"Roman Barták, Simona Ondrčková, Gregor Behnke, Pascal Bercher",10.24963/kr.2021/10
+1116,New Inference Relations from Maximal Consistent Subsets.,kr,2018,"Sébastien Konieczny, Pierre Marquis, Srdjan Vesic",https://www.semanticscholar.org/paper/05936d47975ceeef416360251752553852a38755
+2251,Automatic Reachability Analysis for Nonlinear Hybrid Models with C2E2.,cav,2016,"Chuchu Fan, Bolun Qi, Sayan Mitra, Mahesh Viswanathan, Parasara Sridhar Duggirala",10.1007/978-3-319-41528-4_29
+1804,AIGEN: Random Generation of Symbolic Transition Systems.,cav,2021,"Swen Jacobs, Mouhammad Sakr",10.1007/978-3-030-81688-9_20
+1920,Verification of Deep Convolutional Neural Networks Using ImageStars.,cav,2020,"Hoang-Dung Tran, Stanley Bak, Weiming Xiang, Taylor T. Johnson",10.1007/978-3-030-53288-8_2
+1456,Decision Heuristics in MCSat.,cav,2025,"Thomas Hader, Ahmed Irfan, Stéphane Graham-Lengrand",https://www.semanticscholar.org/paper/9c1414776dde16971cbe94946664a876362312ca
+2430,&quot;Upon This Quote I Will Build My Church Thesis&quot;.,lics,2024,Pierre-Marie Pédrot,https://www.semanticscholar.org/paper/5ecf369658c0449bcd0a898ee93647c82f941fe6
+2432,A Characterisation Theorem for Two-Way Bisimulation-Invariant Monadic Least Fixpoint Logic Over Finite Structures.,lics,2024,"Maximilian Pflueger, Johannes Marti, Egor V. Kostylev",10.1145/3661814.3662107
+1207,Negation Without Negation in Probabilistic Logic Programming.,kr,2016,,https://www.semanticscholar.org/paper/cd8ff464d7905f6dc849b2782f98750297d1dad9
+2296,An Update on Deductive Synthesis and Repair in the Leon Tool.,cav,2016,"Manos Koukoutos, Etienne Kneuss, Viktor Kuncak",10.4204/eptcs.229.9
+954,Multi-head Guarded Existential Rules Over Fixed Signatures.,kr,2020,"Georg Gottlob, Marco Manna, Andreas Pieris",10.24963/kr.2020/45
+1507,"Computer Aided Verification - 37th International Conference, CAV 2025, Zagreb, Croatia, July 23-25, 2025, Proceedings, Part II",cav,2025,,https://www.semanticscholar.org/paper/308f866fd518103cdaa7ad2611484fd84fab8579
+2876,Weighted model counting beyond two-variable logic.,lics,2018,"Antti Kuusisto, Carsten Lutz",10.1145/3209108.3209168
+2544,Graded Monads and Behavioural Equivalence Games.,lics,2022,"Chase Ford, Stefan Milius, Lutz Schröder, Harsh Beohar, Barbara König",10.1145/3531130.3533374
+2199,Abstract Interpretation with Unfoldings.,cav,2017,"Marcelo Sousa, César Rodríguez, Vijay D’Silva, Daniel Kroening",10.1007/978-3-319-63390-9_11
+2782,A Generic Normal Form for ZX-Diagrams and Application to the Rational Angle Completeness.,lics,2019,"Emmanuel Jeandel, Simon Perdrix, Renaud Vilmart",10.1109/lics.2019.8785754
+2266,JayHorn: A Framework for Verifying Java programs.,cav,2016,"Temesghen Kahsai, Philipp Rümmer, Huascar Sanchez, Martin Schäf",10.1007/978-3-319-41528-4_19
+2702,One-Clock Priced Timed Games are PSPACE-hard.,lics,2020,"John Fearnley, Rasmus Ibsen-Jensen, Rahul Savani",10.1145/3373718.3394772
+2746,A comonadic view of simulation and quantum resources.,lics,2019,"Samson Abramsky, Rui Soares Barbosa, Martti Karvonen, Shane Mansfield",10.1109/lics.2019.8785677
+1603,"Computer Aided Verification - 36th International Conference, CAV 2024, Montreal, QC, Canada, July 24-27, 2024, Proceedings, Part III",cav,2024,,https://www.semanticscholar.org/paper/84078b822bd5a05cb5b2fc4b4588e993cfd7077e
+991,A Semantic Perspective on Omission Abstraction in ASP.,kr,2020,"Zeynep G. Saribatur, Thomas Eiter",10.24963/kr.2020/75
+930,Explanations for Negative Query Answers under Existential Rules.,kr,2020,"İsmail İlkan Ceylan, Thomas Lukasiewicz, Enrico Malizia, Cristian Molinaro, Andrius Vaicenavičius",10.24963/kr.2020/23
+1024,Sponges Resist Leakage: The Case of Authenticated Encryption.,kr,2019,"Jean Paul Degabriele, Christian Janson, Patrick Struck",10.1007/978-3-030-34621-8_8
+2112,Reachable Set Over-Approximation for Nonlinear Systems Using Piecewise Barrier Tubes.,cav,2018,"Hui Kong, Ezio Bartocci, Thomas A. Henzinger",10.1007/978-3-319-96145-3_24
+2290,Using SyGuS to Synthesize Reactive Motion Plans.,cav,2016,"Sarah Chasins, Julie L. Newcomb",10.4204/eptcs.229.3
+2360,Hofmann-Streicher lifting of fibred categories : Dedicated to the memory of Thomas Streicher (1958-2025).,lics,2025,"Andrew Slattery, Jonathan Sterling",10.1109/lics65433.2025.00018
+834,A Compilation of Succinctness Results for Arithmetic Circuits.,kr,2021,"Alexis de Colnet, Stefan Mengel",10.24963/kr.2021/20
+911,Answer Set Programming with Composed Predicate Names.,kr,2020,Mario Alviano,10.24963/kr.2020/5
+2329,Approximate Evaluation of Quantitative Second Order Queries.,lics,2025,"Jan Dreier, Robert Ganian, Thekla Hamm",10.1109/lics65433.2025.00056
+1963,Run-Time Optimization for Learned Controllers Through Quantitative Games.,cav,2019,"Guy Avni, Roderick Bloem, Krishnendu Chatterjee, Thomas A. Henzinger, Bettina Könighofer, Stefan Pranger",10.1007/978-3-030-25540-4_36
+2477,Reachability in Injective Piecewise Affine Maps.,lics,2023,"Faraz Ghahremani, Edon Kelmendi, Joël Ouaknine",10.1109/lics56636.2023.10175723
+1761,Adapting Behaviors via Reactive Synthesis.,cav,2021,"Gal Amram, Suguman Bansal, Dror Fried, Lucas Martinelli Tabajara, Moshe Y. Vardi, Gera Weiss",10.1007/978-3-030-81685-8_41
+1171,Algebraic Analysis of the Initialization Phase Grain Version 1 using a Degree-Oriented Interpolation Technique.,kr,2018,James E. McDonough,https://www.semanticscholar.org/paper/569ce9577c959ece18c1d7c9a8420cc18e3ec2d4
+1108,A Logic for Specifying Metric Temporal Constraints for Golog Programs.,kr,2018,Ron Koymans,https://www.semanticscholar.org/paper/77e6d0966546ed7eb3a1e66af5068118a761efef
+1531,Verification Algorithms for Automated Separation Logic Verifiers.,cav,2024,"Marco Eilers, Malte Schwerhoff, Peter Müller",https://www.semanticscholar.org/paper/8481e19783c33258e9d376950a90ccdad8860129
+2654,Asynchronous Template Games and the Gray Tensor Product of 2-Categories.,lics,2021,Paul-Andre Mellies,10.1109/lics52264.2021.9470758
+2956,Capturing polynomial time using Modular Decomposition.,lics,2017,Berit Grußien,https://www.semanticscholar.org/paper/e6591854a3047fe45fd8040e89c85c0fd967e1be
+1067,Heuristic Search Planning With Multi-Objective Probabilistic LTL Constraints.,kr,2018,"Philipp Schillinger, Mathias Burger, Dimos V. Dimarogonas",https://www.semanticscholar.org/paper/6938888a0e78adb0ec0e4421307c3cc92f169815
+1377,Refining and Generalizing P-log - Preliminary Report.,lpnmr,2017,"Jack Burton Epstein, J. P. D'Agostino, Avery A. Drake, Nicholas Lampiris",https://www.semanticscholar.org/paper/e8bd1f4241098e543af4191534494e114febcb55
+1317,Epistemic Logic Programs: A Study of Some Properties.,lpnmr,2022,"STEFANIA COSTANTINI, ANDREA FORMISANO",https://www.semanticscholar.org/paper/5e2435bf388da8b8d40f07f4f74f5934ece9ec11
+1329,Semantics for Conditional Literals via the SM Operator.,lpnmr,2022,"Zachary Hansen, Yuliya Lierler",https://www.semanticscholar.org/paper/074cd832221630a680b9e4d1363faf64b4034ba8
+2007,Automated Synthesis of Secure Platform Mappings.,cav,2019,"Eunsuk Kang, Stéphane Lafortune, Stavros Tripakis",10.1007/978-3-030-25540-4_12
+1767,Latticed k-Induction with an Application to Probabilistic Programs.,cav,2021,"Kevin Batz, Mingshuai Chen, Benjamin Lucien Kaminski, Joost-Pieter Katoen, Christoph Matheja, Philipp Schröer",10.1007/978-3-030-81688-9_25
+2884,A sequent calculus with dependent types for classical arithmetic.,lics,2018,Étienne Miquey,10.1145/3209108.3209199
+2423,Uniformisation of Regular Relations in First-Order Logic with Two Variables.,lics,2024,"Nathan Lhote, Vincent Michielini, Michał Skrzypczak",10.1145/3661814.3662114
+1536,Algebraic Reasoning Meets Automata in Solving Linear Integer Arithmetic.,cav,2024,"Peter Habermehl, Vojtěch Havlena, Michal Hečko, Lukáš Holík, Ondřej Lengál",https://www.semanticscholar.org/paper/e33ad757467d0095f01ce5b5d3b887ed74f4f6c4
+1021,Insecure Until Proven Updated: Analyzing AMD SEV&apos;s Remote Attestation.,kr,2019,"Robert Buhren, Christian Werling, Jean-Pierre Seifert",10.1145/3319535.3354216
+1802,"Deductive Synthesis of Programs with Pointers: Techniques, Challenges, Opportunities - (Invited Paper).",cav,2021,"Shachar Itzhaky, Hila Peleg, Nadia Polikarpova, Reuben N. S. Rowe, Ilya Sergey",10.1007/978-3-030-81685-8_5
+1586,Formalizing Automated Market Makers in the Lean 4 Theorem Prover.,cav,2024,,https://www.semanticscholar.org/paper/4adcb23374d01b5f6769c98dd439ad9a79450db7
+1378,catnap: Generating Test Suites of Constrained Combinatorial Testing with Answer Set Programming.,lpnmr,2017,"Mutsunori Banbara, Katsumi Inoue, Hiromasa Kaneyuki, Tenda Okimoto, Torsten Schaub, Takehide Soh, Naoyuki Tamura",10.1007/978-3-319-61660-5_24
+743,"Joint Proceedings of the 2nd Workshop on Knowledge Diversity and the 2nd Workshop on Cognitive Aspects of Knowledge Representation co-located with 20th International Conference on Principles of Knowledge Representation and Reasoning (KR2023), Rhodes, Greece, September 3-4, 2023.",kr,2023,,https://www.semanticscholar.org/paper/dc650041838b505357e4a72d7ef269660d28101a
+2730,"Contextual Types, Explained: Invited Tutorial.",lics,2020,Brigitte Pientka,10.1145/3373718.3394735
+1723,Program Verification with Constrained Horn Clauses (Invited Paper).,cav,2022,Maurizio Proietti,https://www.semanticscholar.org/paper/7a1e9c709531cda62443c5d1047ca08cfc3a495b
+713,Argumentation Frameworks Induced by Assumption-based Argumentation: Relating Size and Complexity.,kr,2023,"Tuomo Lehtonen, Anna Rapberger, Markus Ulbricht, Johannes P. Wallner",10.24963/kr.2023/43
+1488,Approximate Probabilistic Bisimulation for Continuous-Time Markov Chains.,cav,2025,"Timm Spork, Christel Baier, Joost-Pieter Katoen, Sascha Klüppelholz, Jakob Piribauer",https://www.semanticscholar.org/paper/94894f9c135d82b492a4c1f14830ca3e551271c5
+2656,"Combining Nondeterminism, Probability, and Termination: Equational and Metric Reasoning.",lics,2021,"Matteo Mio, Ralph Sarkis, Valeria Vignudelli",10.1109/lics52264.2021.9470717
+975,Strategy Synthesis for Data-Aware Dynamic Systems with Multiple Actors.,kr,2020,"Massimiliano de Leoni, Paolo Felli, Marco Montali",10.24963/kr.2020/32
+1318,A Practical Account into Counting Dung&apos;s Extensions by Dynamic Programming.,lpnmr,2022,"Ridhwan Dewoprabowo, Johannes Klaus Fichte, Piotr Jerzy Gorczyca, Markus Hecher",https://www.semanticscholar.org/paper/e50e69c314fd40210e1731b1a34edaf16482c9ac
+3035,Unifying Logical and Statistical AI.,lics,2016,"Pedro Domingos, Daniel Lowd",https://www.semanticscholar.org/paper/99d15b4c9b95600675c11fb287e63850fd2cc133
+2501,Distal Combinatorial Tools for Graphs of Bounded Twin-Width.,lics,2023,Wojciech Przybyszewski,10.1109/lics56636.2023.10175719
+1102,From Knowledge Graph Embedding to Ontology Embedding? An Analysis of the Compatibility between Vector Space Representations and Rules.,kr,2018,,https://www.semanticscholar.org/paper/60347869db7d1940958ee465b3010b3a612bf791
+1562,Lexicographic Ranking Supermartingales with Lazy Lower Bounds.,cav,2024,"Toru Takisaka, Libo Zhang, Changjiang Wang, Jiamou Liu",https://www.semanticscholar.org/paper/d4c60b3a7778904209a5dae6691049460625c2da
+2625,Removing Redundant Refusals: Minimal Complete Test Suites for Failure Trace Semantics.,lics,2021,"Maciej Gazda, Robert M Hierons",https://www.semanticscholar.org/paper/f64893468ae17a1f244219e6b59424210f038c8b
+1351,An ASP-Based Framework for the Manipulation of Articulated Objects Using Dual-Arm Robots.,lpnmr,2019,"Riccardo Bertolucci, Alessio Capitanelli, Carmine Dodaro, Nicola Leone, Marco Maratea, Fulvio Mastrogiovanni, Mauro Vallati",10.1007/978-3-030-20528-7_3
+1343,xASP: An Explanation Generation System for Answer Set Programming.,lpnmr,2022,"Ly Ly Trieu, Tran Cao Son, Marcello Balduccini",https://www.semanticscholar.org/paper/58e504fab204e227e241d5c33a5f9baaa382e843
+1613,Synthesizing Permissive Winning Strategy Templates for Parity Games.,cav,2023,"Ashwani Anand, Satya Prakash Nayak, Anne-Kathrin Schmuck",https://www.semanticscholar.org/paper/6ef9da5aeccf24cb6f6fbe48bcb70c53cc214058
+1754,"Computer Aided Verification - 34th International Conference, CAV 2022, Haifa, Israel, August 7-10, 2022, Proceedings, Part II",cav,2022,,https://www.semanticscholar.org/paper/d79da1ef6ba583f9eed3c92eac51cc987c6a3187
+2225,Proving Properties on PWA Systems Using Copositive and Semidefinite Programming.,cav,2016,Assalé Adjé,10.1007/978-3-319-54292-8_2
+1140,The Window Validity Problem in Rule-Based Stream Reasoning.,kr,2018,"Alessandro Ronca, Mark Kaminski, Bernardo Cuenca Grau, Ian Horrocks",https://www.semanticscholar.org/paper/4ebc684ba953213c60f4bb88ece4958ae2445c13
+2829,Definable decompositions for graphs of bounded linear cliquewidth.,lics,2018,"Mikołaj Bojańczyk, Martin Grohe, Michał Pilipczuk",https://www.semanticscholar.org/paper/1918b04f40f0066161c96bb1af34dd95d58e2fc1
+1785,Formally Documenting Tenderbake (Short Paper).,cav,2021,"David de Almeida Ferreira, Alberto Rodrigues da Silva",https://www.semanticscholar.org/paper/9c5f3c0ff283249fe91960e8d9a772b53311a068
+2620,The Laplace Mechanism has optimal utility for differential privacy over continuous queries.,lics,2021,"Natasha Fernandes, Annabelle McIver, Carroll Morgan",10.1109/lics52264.2021.9470718
+765,Faithful Approaches to Rule Learning.,kr,2022,"David J. Tena Cucala, Bernardo Cuenca Grau, Boris Motik",10.24963/kr.2022/50
+2635,Parikh&apos;s theorem for infinite alphabets.,lics,2021,"Piotr Hofman, Marta Juzepczuk, Slawomir Lasota, Mohnish Pattathurajan",https://www.semanticscholar.org/paper/58f90effcca0067d762fe06ad9a3de3d8e0d1ba3
