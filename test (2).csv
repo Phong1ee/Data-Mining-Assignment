@@ -1,0 +1,87 @@
+title,venue,year,authors,doi,id
+Research Summary on Implementing Functional Patterns by Synthesizing Inverse Functions.,iclp,2020,Finn Teegen,10.4204/eptcs.325.39,498
+Reasoning in Highly Reactive Environments.,iclp,2019,Francesco Pacenza,10.4204/eptcs.306.57,255
+Logic Programming with Max-Clique and its Application to Graph Coloring (Tool Description).,iclp,2017,"Igor Dukanovic, Franz Rendl",10.1007/s10107-006-0026-z,570
+Establish Coherence in Logic Programs Modelling Expert Knowledge via Argumentation.,iclp,2021,"Kewen Wang, Huowang Chen",10.1007/bfb0054794,93
+Answer Set Programming for Qualitative Spatio-Temporal Reasoning: Methods and Experiments.,iclp,2016,Jason Jingshi Li,10.1109/ictai.2012.87,548
+UserArmor: An extension for AppArmor.,iclp,2025,"Mario Alviano, Pierpaolo Sestito",10.3390/a18040185,577
+An Intuitionistic Version of Alternating-Time Temporal Logic.,kr,2025,"Laura Bozzelli, Andrea Capone, Davide Catta, Aniello Murano",10.24963/kr.2025/19,59
+"Integrating SMT solvers into Goal-Directed Answer Set Programming, Challenges and Directions.",iclp,2024,"KYLE MARPLE, GOPAL GUPTA",10.1017/s1471068414000118,7
+Large Neighborhood Prioritized Search for Combinatorial Optimization with Answer Set Programming.,kr,2024,"Irumi Sugimori, Katsumi Inoue, Hidetomo Nabeshima, Torsten Schaub, Takehide Soh, Naoyuki Tamura, Mutsunori Banbara",10.24963/kr.2024/72,465
+The Learning-Knowledge-Reasoning Paradigm for Natural Language Understanding and Question Answering.,iclp,2018,"Jinheon Baek, Alham Fikri Aji, Amir Saffari",10.18653/v1/2023.nlrse-1.7,562
+On the Complexity of Global Necessary Reasons to Explain Classification.,kr,2025,"Marco Calautti, Enrico Malizia, Cristian Molinaro",10.24963/kr.2025/21,281
+Speeding up Lazy-Grounding Answer Set Solving.,iclp,2018,Richard Taupe,10.29007/dt1r,45
+Action Model Learning with Guarantees.,kr,2024,"Diego Aineto, Enrico Scala",10.24963/kr.2024/75,438
+Past-present temporal programs over finite traces: a preliminary report.,iclp,2023,"Pedro Cabalar, Martín Diéguez, François Laferrière, Torsten Schaub",10.1007/978-3-031-43619-2_53,22
+Penalization Framework For Autonomous Agents Using Answer Set Programming.,iclp,2023,Vineel S. K. Tummala,10.4204/eptcs.385.50,51
+Logic Programming for XAI: A Technical Perspective.,iclp,2021,Luc Raedt,10.1007/978-3-642-60085-2_14,76
+On the Expressiveness of Spatial Constraint Systems.,iclp,2016,", Michell Guzmán",10.70675/6bc651c8ze78bz45dez9b34z8fe4450cb7ac,328
+Putting Perspective into OWL [Sic]: Complexity-Neutral Standpoint Reasoning for Ontology Languages via Monodic S5 over Counting Two-Variable First-Order Logic.,kr,2025,"Lucía Gómez Álvarez, Sebastian Rudolph",10.24963/kr.2025/36,140
+Solving Argumentation Problems Using Answer Set Programming with Quantifiers: Preliminary Report.,iclp,2024,"GERHARD BREWKA, MARTIN DILLER, GEORG HEISSENBERGER, THOMAS LINSBICHLER, STEFAN WOLTRAN",10.1017/s1471068419000474,110
+Formal Verification of Answer Set Programs Containing Advanced Language Constructs.,iclp,2025,Rolf Schwitter,10.29007/g6ph,115
+Unmanned Aerial Vehicle Compliance Checking using Goal-Directed Answer Set Programming.,iclp,2022,"KYLE MARPLE, GOPAL GUPTA",10.1017/s1471068414000118,21
+Situation Calculus Temporally Lifted Abstractions for Generalized Planning - Extended Abstract.,kr,2024,"Giuseppe De Giacomo, Yves Lespérance, Matteo Mancanelli",10.1609/aaai.v39i14.33628,313
+Research Report on Automatic Synthesis of Local Search Neighborhood Operators.,iclp,2019,Mateusz Ślażyński,10.4204/eptcs.306.59,26
+Logical Distillation of Graph Neural Networks.,kr,2024,"Alexander Pluska, Pascal Welke, Thomas Gärtner, Sagar Malhotra",10.24963/kr.2024/86,294
+A Note on Occur-Check.,iclp,2021,Włodzimierz Drabent,10.4204/eptcs.345.17,428
+ASP and PDDL+ Applications in Urban Traffic Distribution and Control.,iclp,2025,"Sandra Castellanos-Paez, Francesco Percassi, Mauro Vallati",10.1609/socs.v18i1.36005,256
+Knowledge-Driven Robot Program Synthesis from Human VR Demonstrations.,kr,2023,"Benjamin Alt, Franklin Kenghagho Kenfack, Andrei Haidu, Darko Katic, Rainer Jäkel, Michael Beetz",10.24963/kr.2023/4,88
+"Proceedings of the 22nd International Conference on Principles of Knowledge Representation and Reasoning, KR 2025, Melbourne, Australia, November 1-17, 2025",kr,2025,,10.24963/kr.2025,566
+"Proceedings of the International Conference on Logic Programming 2021 Workshops co-located with the 37th International Conference on Logic Programming (ICLP 2021), Porto, Portugal (virtual), September 20th-21st, 2021.",iclp,2021,,10.1007/978-3-540-74610-2,89
+Learning to Ground Existentially Quantified Goals.,kr,2024,"Martin Funkquist, Simon Ståhlberg, Hector Geffner",10.24963/kr.2024/80,591
+Weighted Conditional EL⊥ Knowledge Bases with Integer Weights: an ASP Approach.,iclp,2021,"Laura Giordano, Daniele Theseider Dupré",10.4204/eptcs.345.19,219
+P-rho-Log: Combining Logic Programming with Conditional Transformation Systems.,iclp,2016,,10.7551/mitpress/4316.003.0033,145
+Interactive Exploration of Plan Spaces.,kr,2025,Παναγιώτης Παπαδάκος,10.12681/eadd/36568,274
+Extended Abstract: Early Validation of High-level System Requirements with Event Calculus and Answer Set Programming.,iclp,2024,"ONDŘEJ VAŠÍČEK, JOAQUIN ARIAS, JAN FIEDOR, GOPAL GUPTA, BRENDAL HALL, BOHUSLAV KŘENA, BRIAN LARSON, SARAT CHANDRA VARANASI, TOMÁŠ VOJNAR",10.1017/s1471068424000280,126
+Sequent-Type Calculi for Systems of Nonmonotonic Paraconsistent Logics.,iclp,2020,"Tobias Geibinger, Hans Tompits",10.4204/eptcs.325.23,529
+A Sound and Complete Axiomatisation for Intuitionistic Linear Temporal Logic.,kr,2024,"David Fernández-Duque, Brett McLean, Lukas Zenger",10.24963/kr.2024/33,193
+An ASP Framework for Efficient Urban Traffic Optimization.,iclp,2022,Matteo Cardellini,10.4204/eptcs.364.37,185
+A Rule-Based Approach to Specifying Preferences over Conflicting Facts and Querying Inconsistent Knowledge Bases.,kr,2025,"Meghyn Bienvenu, Camille Bourgaux, Katsumi Inoue, Robin Jean",10.24963/kr.2025/17,509
+Expanding the Class of Polynomial Time Computable Well-Founded Semantics for Hybrid MKNF.,iclp,2023,"Knorr Matthias, Alferes Jos&eacute; J&uacute;lio, Hitzler Pascal",10.3233/978-1-58603-891-5-99,329
+Understanding Restaurant Stories Using an ASP Theory of Intentions.,iclp,2017,"QINGLIN ZHANG, CHRIS BENTON, DANIELA INCLEZAN",10.1017/s1471068419000048,468
+ASP-QRAT: A Conditionally Optimal Dual Proof System for ASP.,kr,2024,"Leroy Chew, Alexis de Colnet, Stefan Szeider",10.24963/kr.2024/24,142
+How well do SOTA legal reasoning models support abductive reasoning?,iclp,2023,,10.2307/jj.30297486.9,485
+Answer Set Counting and its Applications.,iclp,2024,Mohimenul Kabir,10.4204/eptcs.416.34,181
+An Embarrassingly Parallel Model Counter.,kr,2025,"Zhenghang Xu, Minghao Yin, Jean Marie Lagniez",10.24963/kr.2025/65,63
+An ASP-Based Framework for MUSes.,iclp,2025,"Mohimenul Kabir, Kuldeep S Meel",10.4204/eptcs.439.3,124
+Flexible and Explainable Solutions for Multi-Agent Path Finding Problems.,iclp,2021,Aysu Bogatarkan,10.4204/eptcs.345.40,406
+A Rule-Based System for Explainable Donor-Patient Matching in Liver Transplantation.,iclp,2019,"Felicidad Aguado, Pedro Cabalar, Jorge Fandinno, Brais Muñiz, Gilberto Pérez, Francisco Suárez",10.4204/eptcs.306.31,368
+Formal Aspects of Strategic Reasoning.,kr,2024,,10.4324/9780203503881-7,101
+Extended abstract: 푓퐶퐴푆푃 - A forgetting technique for XAI based on goal-directed constraint ASP models.,iclp,2024,"Joaquín Arias, Manuel Carro, Zhuo Chen, Gopal Gupta",10.4204/eptcs.364.24,293
+A Compositional Typed Higher-Order Logic with Definitions.,iclp,2016,,10.1017/cbo9781139021326.006,385
+An application of Answer Set Programming in Distributed Architectures: ASP Microservices.,iclp,2020,"Stefania Costantini, Lorenzo De Lauretis",10.4204/eptcs.325.28,205
+Towards Incorporating Normative Requirements In Autonomous Systems Using Datalog.,iclp,2025,"Dorra Zaibi, Meriem Riahi, Faouzi Moussa",10.5220/0006702404630474,217
+Revising Weighted Knowledge Bases Using FH-Conditioning.,kr,2023,"Carlos Viegas Damásio, Wolfgang Nejdl, Luís Moniz Pereira",10.1016/b978-1-4832-1452-8.50151-2,367
+PEG 2.0: Future-Gazing Through a Socio-Linguistic and Historical Lens.,iclp,2025,,10.1126/science.1662-b,307
+Efficient OWL2QL Meta-reasoning Using ASP-based Hybrid Knowledge Bases.,iclp,2024,"Haya Majid Qureshi, Wolfgang Faber",10.4204/eptcs.416.17,262
+Reasoning in Defeasible Description Logics with System W and Lexicographic Inference.,kr,2025,"Giovanni Casini, Jonas Haldimann, Thomas Meyer",10.24963/kr.2025/22,81
+On the impact of sensors update in declarative AI for videogames.,iclp,2023,,10.1002/seup.v12:1,226
+Epistemic Logic Programs with World View Constraints.,iclp,2018,"Patrick Kahl, Anthony Leclerc",10.29007/sclq,411
+Information Extraction Tool Text2ALM: From Narratives to Action Language System Descriptions.,iclp,2019,"Yuliya Lierler, Gang Ling, Craig Olson",10.3233/aic-220194,210
+asymptoticplp: Approximating probabilistic logic programs on large domains.,iclp,2023,"DAMIANO AZZOLINI, FABRIZIO RIGUZZI, THERESA SWIFT",10.1017/s1471068425100161,17
+Explaining Actual Causation via Reasoning About Actions and Change.,iclp,2018,", Emily C. LeBlanc, Santiago Ontañón, Marcello Balduccini",10.17918/kp1w-ma77,402
+Finite Axiomatizability by Disjunctive Existential Rules.,kr,2025,"Marco Calautti, Marco Console, Andreas Pieris",10.24963/kr.2025/20,2
+Non-Rigid Designators in Modal and Temporal Free Description Logics.,kr,2024,"Alessandro Artale, Roman Kontchakov, Andrea Mazzullo, Frank Wolter",10.24963/kr.2024/8,114
+Solving B Constraints with Goal-directed Answer Set Programming.,iclp,2021,"KYLE MARPLE, GOPAL GUPTA",10.1017/s1471068414000118,242
+Summary on &quot;Hybrid Neuro-Symbolic Approach for Text-Based Games using Inductive Logic&quot;.,iclp,2022,"Ambrus Kaposi, András Kovács, Thorsten Altenkirch",10.1145/3291621,527
+A Semantics For Probabilistic Answer Set Programs With Incomplete Stochastic Knowledge.,iclp,2022,Fabrizio Riguzzi,10.1201/9781003427421-6,260
+Unifying Abduction and Deduction through Argumentation.,kr,2023,Erwin B. Montgomery,10.1093/med/9780190912925.003.0005,315
+A Tensor-Based Probabilistic Event Calculus.,kr,2025,"Efthimis Tsilionis, Alexander Artikis, Georgios Paliouras",10.24963/kr.2025/62,109
+On Gradual Semantics for Assumption-Based Argumentation.,kr,2025,"Anna Rapberger, Fabrizio Russo, Antonio Rago, Francesca Toni",10.24963/kr.2025/50,473
+"Proceedings 37th International Conference on Logic Programming (Technical Communications), ICLP Technical Communications 2021, Porto (virtual event), 20-27th September 2021.",iclp,2021,"Veronica Dahl, Paul Fodor",10.4204/eptcs.345.10,418
+"Monotone Rewritability and the Analysis of Queries, Views, and Rules.",kr,2024,"Michael Benedikt, Stanislav Kikot, Johannes Marti, Piotr Ostropolski-Nawelaja",10.24963/kr.2024/11,297
+Rewriting Optimization Statements in Answer-Set Programs.,iclp,2016,"Aziz Amezian El Khalfioui, Jonathan Joertz, Dorian Labeeuw, Gaëtan Staquet, Jef Wijsen",10.1145/3340531.3411911,160
+Syntactic Requirements for Well-defined Hybrid Probabilistic Logic Programs.,iclp,2021,"Damiano Azzolini, Fabrizio Riguzzi",10.4204/eptcs.345.12,568
+Explainability Through Argumentation in Logic Programming.,iclp,2021,Kewen Wang,10.1016/s0743-1066(00)00004-2,129
+Semantic Versioning Checking in a Declarative Package Manager.,iclp,2017,"Luís Carvalho, João Costa Seco",10.1145/3479394.3479416,144
+VERUS-LM: a Versatile Framework for Combining LLMs with Symbolic Reasoning.,iclp,2025,"Benjamin Callewaert, Simon Vandevelde, Joost Vennekens",10.4204/eptcs.439.5,211
+On the Suitability of Inconsistency Measures.,kr,2023,"Said Jabbour, Badran Raddaoui, Lakhdar Sais",10.5220/0005824305320539,35
+A Framework for Defining Behavior Modes in Policy-Aware Autonomous Agents.,iclp,2024,"Marc S. Atkin, Gary W. King, David L. Westbrook, Brent Heeringa, Paul R. Cohen",10.1145/375735.376404,432
+Building Health Policy Enforcement Solution Based on HL7 FHIR.,iclp,2021,"Rinner Christoph, Duftschmid Georg",10.3233/978-1-61499-645-3-100,439
+"Counterfactual and Semifactual Explanations in Abstract Argumentation: Formal Foundations, Complexity and Computation.",kr,2024,"Gianvincenzo Alfano, Sergio Greco, Francesco Parisi, Irina Trubitsyna",10.24963/kr.2024/2,207
+The Impact of Structure in Answer Set Counting: Fighting Cycles and its Limits.,kr,2023,"Markus Hecher, Rafael Kiesel",10.24963/kr.2023/34,587
+"Solving Recurrence Relations using Machine Learning, with Application to Cost Analysis.",iclp,2023,"Maximiliano Klemen, Miguel Á. Carreira-Perpiñán, Pedro Lopez-Garcia",10.4204/eptcs.385.16,414
+Sequence Explanations for Acceptance in Abstract Argumentation.,kr,2025,"Lars Bengel, Matthias Thimm",10.24963/kr.2025/12,295
+Natural Language Question Answering with Goal-directed Answer Set Programming.,iclp,2021,"Arindam Mitra, Peter Clark, Oyvind Tafjord, Chitta Baral",10.1609/aaai.v33i01.33013003,360
+VECSR: Virtually Embodied Common Sense Reasoning System.,iclp,2025,"Alexis R. Tudor, Joaquín Arias, Gopal Gupta",10.4204/eptcs.439.7,156
+Achieving High Quality Knowledge Acquisition using Controlled Natural Language.,iclp,2017,Rolf Schwitter,10.1007/978-3-642-14418-9_3,221
