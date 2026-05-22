@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import html
 import json
 import re
 import sys
@@ -115,6 +116,54 @@ def reconstruct_openalex_abstract(inv: dict[str, list[int]] | None) -> str | Non
     return " ".join(w for _, w in slots)
 
 
+def http_get_text(url: str, headers: dict[str, str], timeout: float = 60.0) -> tuple[str | None, int | None]:
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            raw = resp.read().decode("utf-8", errors="replace")
+            code = getattr(resp, "status", 200) or 200
+            return raw, code
+    except urllib.error.HTTPError as e:
+        try:
+            body = e.read().decode("utf-8", errors="replace")
+            return body, int(e.code)
+        except Exception:
+            return None, int(e.code)
+    except (urllib.error.URLError, TimeoutError):
+        return None, None
+
+
+def extract_abstract_from_html(html_text: str) -> str | None:
+    if not html_text:
+        return None
+    patterns = [
+        r'<meta[^>]+name=["\']citation_abstract["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']dc\.Description["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']DC\.Description["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+property=["\']og:description["\'][^>]+content=["\']([^"\']+)["\']',
+        r'<meta[^>]+name=["\']description["\'][^>]+content=["\']([^"\']+)["\']',
+    ]
+    for patt in patterns:
+        m = re.search(patt, html_text, re.I | re.S)
+        if m:
+            text = html.unescape(m.group(1).strip())
+            if is_plausible_abstract(text):
+                return re.sub(r"\s+", " ", text)
+
+    m = re.search(
+        r'<(?:section|div)[^>]+class=["\'][^"\']*abstract[^"\']*["\'][^>]*>(.*?)</(?:section|div)>',
+        html_text,
+        re.I | re.S,
+    )
+    if m:
+        text = re.sub(r'<[^>]+>', ' ', m.group(1)).strip()
+        text = html.unescape(text)
+        text = re.sub(r"\s+", " ", text)
+        if is_plausible_abstract(text):
+            return text
+    return None
+
+
 def parse_doi_cell(cell: str) -> tuple[str, str | None]:
     """
     Returns (kind, value) where kind is:
@@ -182,6 +231,14 @@ def fetch_openalex_by_doi(doi: str) -> tuple[str | None, str | None]:
     ab = reconstruct_openalex_abstract(inv)
     if ab:
         return ab.strip(), "openalex_doi"
+
+    # Fallback: some OpenAlex DOI records omit `abstract_inverted_index` even though
+    # the publisher landing page contains an abstract.
+    html_text, _ = http_get_text(f"https://doi.org/{doi}", openalex_headers())
+    if html_text:
+        ab = extract_abstract_from_html(html_text)
+        if ab:
+            return ab.strip(), "doi_html_fallback"
     return None, None
 
 
