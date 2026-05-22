@@ -32,6 +32,7 @@ from typing import Any
 S2_PAPER_FIELDS = "title,abstract"
 S2_BASE = "https://api.semanticscholar.org/graph/v1/paper"
 OPENALEX_BASE = "https://api.openalex.org"
+CROSSREF_BASE = "https://api.crossref.org"
 
 # 40-char hex after /paper/ in semanticscholar.org URLs
 S2_HEX_ID = re.compile(r"semanticscholar\.org/paper/([0-9a-f]{40})\b", re.I)
@@ -72,11 +73,31 @@ def title_jaccard(a: str, b: str) -> float:
     return inter / union if union else 0.0
 
 
+def is_bot_challenge_html(html_text: str) -> bool:
+    """True when the response is a JS/bot interstitial, not a publisher page."""
+    if not html_text:
+        return False
+    low = html_text.lower()
+    markers = (
+        "client challenge",
+        "loading-error",
+        "_fs-ch-",
+        "cf-browser-verification",
+        "checking your browser",
+        "attention required",
+        "please enable javascript",
+        "javascript is disabled",
+    )
+    return any(m in low for m in markers)
+
+
 def is_plausible_abstract(text: str) -> bool:
     s = (text or "").strip()
     if len(s) < 55:
         return False
     low = s.lower()
+    if "javascript is disabled" in low or "please enable javascript" in low:
+        return False
     if low.startswith("sponsorship:") or low.startswith("funding:") or low.startswith("grant "):
         return False
     words = s.split()
@@ -103,6 +124,14 @@ def openalex_headers() -> dict[str, str]:
     return {"User-Agent": "mailto:student@localhost (DataMiningAssignment abstract script)"}
 
 
+def browser_headers() -> dict[str, str]:
+    return {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+
+
 def reconstruct_openalex_abstract(inv: dict[str, list[int]] | None) -> str | None:
     if not inv:
         return None
@@ -116,25 +145,85 @@ def reconstruct_openalex_abstract(inv: dict[str, list[int]] | None) -> str | Non
     return " ".join(w for _, w in slots)
 
 
-def http_get_text(url: str, headers: dict[str, str], timeout: float = 60.0) -> tuple[str | None, int | None]:
+def http_get_text(url: str, headers: dict[str, str], timeout: float = 60.0) -> tuple[str | None, int | None, str | None]:
     req = urllib.request.Request(url, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             raw = resp.read().decode("utf-8", errors="replace")
             code = getattr(resp, "status", 200) or 200
-            return raw, code
+            final = getattr(resp, "geturl", lambda: None)() or None
+            return raw, code, final
     except urllib.error.HTTPError as e:
         try:
             body = e.read().decode("utf-8", errors="replace")
-            return body, int(e.code)
+            final = getattr(e, "url", None)
+            return body, int(e.code), final
         except Exception:
-            return None, int(e.code)
+            return None, int(e.code), None
     except (urllib.error.URLError, TimeoutError):
+        return None, None, None
+
+
+def fetch_europe_pmc_abstract(doi: str) -> tuple[str | None, str | None]:
+    """Europe PMC often has abstracts for biomedical DOIs (JSON API, no browser)."""
+    q = urllib.parse.quote(f'DOI:"{doi}"', safe="")
+    url = (
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+        f"?query={q}&format=json&resultType=core&pageSize=1"
+    )
+    data, _ = http_get_json(url, openalex_headers())
+    if not data:
         return None, None
+    results = (data.get("resultList") or {}).get("result") or []
+    if not results:
+        return None, None
+    ab = (results[0].get("abstractText") or "").strip()
+    if is_plausible_abstract(ab):
+        return ab, "europe_pmc"
+    return None, None
+
+
+def fetch_crossref_publisher_url(doi: str) -> str | None:
+    """Return a publisher landing-page URL from Crossref metadata for the DOI, if available."""
+    enc = urllib.parse.quote(doi, safe="")
+    url = f"{CROSSREF_BASE}/works/{enc}"
+    data, _ = http_get_json(url, openalex_headers())
+    if not data:
+        return None
+    msg = data.get("message") or {}
+    # Common field containing a publisher URL
+    # Sometimes Crossref includes link entries
+    for link in msg.get("link", []) or []:
+        if isinstance(link, dict):
+            lu = link.get("URL") or link.get("url")
+            if lu:
+                return lu
+    return None
+
+
+def extract_div_block(html_text: str, class_substring: str) -> str | None:
+    open_re = re.compile(
+        r'<div\b[^>]+class=["\'][^"\']*' + re.escape(class_substring) + r'[^"\']*["\'][^>]*>',
+        re.I,
+    )
+    m = open_re.search(html_text)
+    if not m:
+        return None
+
+    depth = 0
+    tag_re = re.compile(r'<(/?)div\b', re.I)
+    for tag in tag_re.finditer(html_text, m.start()):
+        if tag.group(1) == "":
+            depth += 1
+        else:
+            depth -= 1
+        if depth == 0:
+            return html_text[m.start() : tag.end()]
+    return None
 
 
 def extract_abstract_from_html(html_text: str) -> str | None:
-    if not html_text:
+    if not html_text or is_bot_challenge_html(html_text):
         return None
     patterns = [
         r'<meta[^>]+name=["\']citation_abstract["\'][^>]+content=["\']([^"\']+)["\']',
@@ -150,8 +239,53 @@ def extract_abstract_from_html(html_text: str) -> str | None:
             if is_plausible_abstract(text):
                 return re.sub(r"\s+", " ", text)
 
+    block = extract_div_block(html_text, 'tldr-abstract-replacement')
+    if block:
+        text = re.sub(r'<[^>]+>', ' ', block).strip()
+        text = html.unescape(text)
+        text = re.sub(r"\s+", " ", text)
+        if is_plausible_abstract(text):
+            return text
+
+    m = re.search(
+        r'<(?:section|div)[^>]+class=["\'][^"\']*c-article-section__content[^"\']*["\'][^>]*>(.*?)</(?:section|div)>',
+        html_text,
+        re.I | re.S,
+    )
+    if m:
+        text = re.sub(r'<[^>]+>', ' ', m.group(1)).strip()
+        text = html.unescape(text)
+        text = re.sub(r"\s+", " ", text)
+        if is_plausible_abstract(text):
+            return text
+
     m = re.search(
         r'<(?:section|div)[^>]+class=["\'][^"\']*abstract[^"\']*["\'][^>]*>(.*?)</(?:section|div)>',
+        html_text,
+        re.I | re.S,
+    )
+    if m:
+        text = re.sub(r'<[^>]+>', ' ', m.group(1)).strip()
+        text = html.unescape(text)
+        text = re.sub(r"\s+", " ", text)
+        if is_plausible_abstract(text):
+            return text
+
+    m = re.search(
+        r'<(?:section|div)[^>]+(?:class=["\'][^"\']*(?:abstract|article-section|content|section__content)[^"\']*["\']|id=["\'][^"\']*(?:abs|abstract)[^"\']*["\'])[\s\S]*?>(.*?)</(?:section|div)>',
+        html_text,
+        re.I | re.S,
+    )
+    if m:
+        text = re.sub(r'<[^>]+>', ' ', m.group(1)).strip()
+        text = html.unescape(text)
+        text = re.sub(r"\s+", " ", text)
+        if is_plausible_abstract(text):
+            return text
+
+    m = re.search(
+        r'<(?:section|div)[^>]+(?:class=["\'][^"\']*c-article-section__content[^"\']*["\']|id=["\']Abs1-content[^"\']*["\"])' \
+        r'[^>]*>(.*?)</(?:section|div)>',
         html_text,
         re.I | re.S,
     )
@@ -221,6 +355,65 @@ def fetch_semantic_scholar(kind: str, value: str) -> tuple[str | None, str | Non
     return None, None, rate_limited
 
 
+def extract_semantic_scholar_hidden_abstract(html_text: str) -> str | None:
+    # Semantic Scholar may hide the abstract in a collapsed page section.
+    return extract_abstract_from_html(html_text)
+
+
+def extract_semantic_scholar_doi_link(html_text: str) -> str | None:
+    for patt in [
+        r'<a[^>]+data-heap-link-type=["\']doi["\'][^>]+href=["\']([^"\']+)["\']',
+        r'<a[^>]+data-test-id=["\']paper-link["\'][^>]+href=["\']([^"\']+)["\']',
+        r'<a[^>]+href=["\']([^"\']*doi\.org/[^"\']+)["\'][^>]*>',
+    ]:
+        m = re.search(patt, html_text, re.I | re.S)
+        if m:
+            return html.unescape(m.group(1).strip())
+    return None
+
+
+def fetch_semantic_scholar_publisher_fallback(url: str) -> tuple[str | None, str | None]:
+    html_text, _, _ = http_get_text(url, browser_headers())
+    if not html_text:
+        return None, None
+
+    # Try the Semantic Scholar page itself first, including any hidden abstract block.
+    ab = extract_semantic_scholar_hidden_abstract(html_text)
+    if ab:
+        return ab, "semantic_scholar_hidden_html"
+
+    # Follow a DOI publisher link if it exists in the Semantic Scholar page.
+    doi_link = extract_semantic_scholar_doi_link(html_text)
+    if doi_link:
+        href = urllib.parse.urljoin(url, doi_link)
+        pub_html, _, _final = http_get_text(href, browser_headers())
+        if pub_html and not is_bot_challenge_html(pub_html):
+            ab = extract_abstract_from_html(pub_html)
+            if ab:
+                return ab, "semantic_scholar_doi_publisher"
+
+    # Look for a publisher link labeled "View via publisher" or similar.
+    match = re.search(
+        r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>\s*View via publisher\s*</a>',
+        html_text,
+        re.I | re.S,
+    )
+    if not match:
+        match = re.search(
+            r'<a[^>]+href=["\']([^"\']+)["\'][^>]*>[^<]*publisher[^<]*</a>',
+            html_text,
+            re.I | re.S,
+        )
+    if match:
+        href = urllib.parse.urljoin(url, match.group(1))
+        pub_html, _, _final = http_get_text(href, browser_headers())
+        if pub_html and not is_bot_challenge_html(pub_html):
+            ab = extract_abstract_from_html(pub_html)
+            if ab:
+                return ab, "semantic_scholar_publisher"
+    return None, None
+
+
 def fetch_openalex_by_doi(doi: str) -> tuple[str | None, str | None]:
     enc = urllib.parse.quote(f"https://doi.org/{doi}", safe="")
     url = f"{OPENALEX_BASE}/works/{enc}"
@@ -229,17 +422,46 @@ def fetch_openalex_by_doi(doi: str) -> tuple[str | None, str | None]:
         return None, None
     inv = data.get("abstract_inverted_index")
     ab = reconstruct_openalex_abstract(inv)
-    if ab:
+    if is_plausible_abstract(ab):
         return ab.strip(), "openalex_doi"
 
     # Fallback: some OpenAlex DOI records omit `abstract_inverted_index` even though
     # the publisher landing page contains an abstract.
-    html_text, _ = http_get_text(f"https://doi.org/{doi}", openalex_headers())
-    if html_text:
-        ab = extract_abstract_from_html(html_text)
+    doi_url = f"https://doi.org/{doi}"
+    html_text, _, final = http_get_text(doi_url, browser_headers())
+    if not html_text:
+        return None, None
+
+    # Try extracting directly from DOI resolver response (many DOIs redirect
+    # straight to the publisher). If that fails and the resolver shows a JS
+    # interstitial (Cloudflare / client challenge), consult Crossref for the
+    # publisher landing URL and fetch that instead.
+    ab = extract_abstract_from_html(html_text)
+    if ab:
+        return ab.strip(), "doi_html_fallback"
+
+    if is_bot_challenge_html(html_text):
+        pub = fetch_crossref_publisher_url(doi)
+        if pub:
+            pub_html, _, final = http_get_text(pub, browser_headers())
+            if pub_html and not is_bot_challenge_html(pub_html):
+                ab = extract_abstract_from_html(pub_html)
+                if ab:
+                    return ab.strip(), "crossref_publisher_fallback"
+            if final:
+                final_html, _, _ = http_get_text(final, browser_headers())
+                if final_html and not is_bot_challenge_html(final_html):
+                    ab = extract_abstract_from_html(final_html)
+                    if ab:
+                        return ab.strip(), "crossref_publisher_final_fallback"
+        ab, src = fetch_europe_pmc_abstract(doi)
         if ab:
-            return ab.strip(), "doi_html_fallback"
-    return None, None
+            return ab, src
+
+    # As a last resort, fall back to following Semantic Scholar/other heuristics
+    # that may lead to the publisher page.
+    return fetch_semantic_scholar_publisher_fallback(doi_url)
+
 
 
 def fetch_openalex_search_title(title: str, min_jaccard: float = 0.28) -> tuple[str | None, str | None]:
@@ -279,10 +501,13 @@ def fetch_abstract_for_row(doi_cell: str, title: str) -> tuple[str | None, str |
             if ab:
                 return ab, src
 
-    if kind == "other_url" and value and "semanticscholar.org" in value.lower():
+    if kind == "other_url":
         m = S2_HEX_ID.search(value)
         if m:
             ab, src, _s2_429 = fetch_semantic_scholar("s2_corpus_id", m.group(1).lower())
+            if ab:
+                return ab, src
+            ab, src = fetch_semantic_scholar_publisher_fallback(value)
             if ab:
                 return ab, src
 
@@ -299,6 +524,7 @@ def process_file(
     delay_s: float,
     start_row: int,
     max_rows: int | None,
+    update_missing: bool,
 ) -> None:
     with path.open(newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
@@ -311,12 +537,21 @@ def process_file(
         rows = rows[: max(0, max_rows)]
 
     done = 0
+    skipped = 0
+    updated = 0
     with out_path.open("w", newline="", encoding="utf-8") as fout:
         writer = csv.DictWriter(fout, fieldnames=out_fields, extrasaction="ignore")
         writer.writeheader()
         for i, row in enumerate(rows):
             if i < start_row:
                 writer.writerow({**row, "abstract": row.get("abstract", ""), "abstract_source": row.get("abstract_source", "")})
+                continue
+
+            existing_abstract = (row.get("abstract") or "").strip()
+            existing_source = (row.get("abstract_source") or "").strip()
+            if update_missing and existing_abstract:
+                writer.writerow({**row, "abstract": existing_abstract, "abstract_source": existing_source})
+                skipped += 1
                 continue
 
             doi_cell = row.get("doi", "") or ""
@@ -327,10 +562,15 @@ def process_file(
             writer.writerow(row_out)
             fout.flush()
             done += 1
+            if ab or src:
+                updated += 1
             if delay_s > 0:
                 time.sleep(delay_s)
 
-    print(f"Wrote {done} rows (from row {start_row + 1}) to {out_path}")
+    status = f"Wrote {done} rows (from row {start_row + 1}) to {out_path}"
+    if update_missing:
+        status += f"; skipped {skipped} existing abstracts, updated {updated} missing abstracts"
+    print(status)
 
 
 def main() -> None:
@@ -358,6 +598,11 @@ def main() -> None:
         default="_with_abstracts",
         help="Output filename suffix before .csv (default _with_abstracts)",
     )
+    ap.add_argument(
+        "--update-missing",
+        action="store_true",
+        help="Keep existing abstracts and only fetch rows with no abstract",
+    )
     args = ap.parse_args()
 
     for inp in args.inputs:
@@ -367,7 +612,14 @@ def main() -> None:
             continue
         stem = inp.stem
         out = inp.with_name(f"{stem}{args.suffix}.csv")
-        process_file(inp, out, delay_s=args.delay, start_row=args.start_row, max_rows=args.max_rows)
+        process_file(
+            inp,
+            out,
+            delay_s=args.delay,
+            start_row=args.start_row,
+            max_rows=args.max_rows,
+            update_missing=args.update_missing,
+        )
 
 
 if __name__ == "__main__":
