@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/debug_extract.py",
             "console": "integratedTerminal",
-            "args": ["--doi", "10.1007/978-3-319-41540-6_20", "--input", "CSV/public_test_with_abstracts_updated_4_2.csv","--rows", "298"]
+            "args": ["--doi", "https://www.semanticscholar.org/paper/58f90effcca0067d762fe06ad9a3de3d8e0d1ba3", "--input", "CSV/private_test_with_abstracts_update_phong.csv","--rows", "298"]
         }
     ]
 }

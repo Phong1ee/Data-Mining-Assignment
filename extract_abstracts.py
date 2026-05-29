@@ -421,6 +421,9 @@ def fetch_openalex_by_doi(doi: str) -> tuple[str | None, str | None]:
     if not data:
         return None, None
     inv = data.get("abstract_inverted_index")
+    topic = data.get("topics")
+    keywords = data.get("keywords")
+    print("OpenAlex DOI lookup", {"topics": topic, "keywords": keywords})
     ab = reconstruct_openalex_abstract(inv)
     if is_plausible_abstract(ab):
         return ab.strip(), "openalex_doi"
