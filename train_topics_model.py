@@ -65,46 +65,13 @@ def fit_predict(
     text_train = build_text_column(train_df)
     text_test = build_text_column(test_df)
 
-    numeric_cols = [
-        c
-        for c in [
-            "year",
-            "primary_topic_score",
-            "topic_1_score",
-            "topic_2_score",
-            "topic_3_score",
-            "keyword_1_score",
-            "keyword_2_score",
-            "keyword_3_score",
-        ]
-        if c in train_df.columns
-    ]
-
     tfidf = TfidfVectorizer(max_features=4000, ngram_range=(1, 2), min_df=2)
     X_text_tr = tfidf.fit_transform(text_train)
     X_text_te = tfidf.transform(text_test)
 
-    tab_pre = ColumnTransformer(
-        transformers=[
-            (
-                "num",
-                Pipeline(
-                    [
-                        ("imputer", SimpleImputer(strategy="median")),
-                        ("scale", StandardScaler()),
-                    ]
-                ),
-                numeric_cols,
-            ),
-            ("venue", OneHotEncoder(handle_unknown="ignore", max_categories=32), ["venue"]),
-        ],
-        remainder="drop",
-    )
-    X_tab_tr = tab_pre.fit_transform(train_df)
-    X_tab_te = tab_pre.transform(test_df)
-
-    X_tr = hstack([X_text_tr, _to_csr(X_tab_tr)])
-    X_te = hstack([X_text_te, _to_csr(X_tab_te)])
+    # Convert to dense arrays for HistGradientBoostingClassifier
+    X_tr = X_text_tr.toarray()
+    X_te = X_text_te.toarray()
 
     clf = HistGradientBoostingClassifier(
         max_iter=300,
@@ -115,9 +82,17 @@ def fit_predict(
         class_weight="balanced",
     )
 
-    cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
-    y_cv = cross_val_predict(clf, X_tr, y_train, cv=cv)
-    qwk = quadratic_weighted_kappa(y_train, y_cv)
+    # Use fewer splits if needed to handle imbalanced classes
+    try:
+        cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+        y_cv = cross_val_predict(clf, X_tr, y_train, cv=cv)
+        qwk = quadratic_weighted_kappa(y_train, y_cv)
+    except ValueError:
+        # Fallback to 3 splits if StratifiedKFold fails
+        print(f"Note: Using 3-fold CV instead of {n_splits}-fold due to class imbalance")
+        cv = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
+        y_cv = cross_val_predict(clf, X_tr, y_train, cv=cv)
+        qwk = quadratic_weighted_kappa(y_train, y_cv)
 
     clf.fit(X_tr, y_train)
     y_pred = clf.predict(X_te).astype(int)
@@ -127,12 +102,12 @@ def fit_predict(
 
 
 def main() -> None:
-    root = Path(__file__).resolve().parent
+    root = Path(_file_).resolve().parent
     ap = argparse.ArgumentParser()
     ap.add_argument(
         "--features-csv",
         type=Path,
-        default=root / "CSV" / "papers_topics_keywords.csv",
+        default=root / "CSV" / "train_papers_topics_keywords.csv",
     )
     ap.add_argument(
         "--train-csv",
@@ -159,6 +134,23 @@ def main() -> None:
 
     train_df = df[df["Label"].notna()].copy()
     test_df = df[df["Label"].isna()].copy()
+    
+    # If no unlabeled test data in features CSV, try loading from separate test files
+    if len(test_df) == 0:
+        test_files = [
+            args.features_csv.parent / "public_test_topics_keywords.csv",
+            args.features_csv.parent / "private_test_topics_keywords.csv",
+        ]
+        test_dfs = []
+        for test_file in test_files:
+            if test_file.is_file():
+                test_dfs.append(pd.read_csv(test_file))
+        
+        if test_dfs:
+            test_df = pd.concat(test_dfs, ignore_index=True)
+            # Add Label column as NaN for consistency
+            if "Label" not in test_df.columns:
+                test_df["Label"] = np.nan
 
     if train_df.empty:
         print("No labeled training rows in features CSV.")
@@ -167,6 +159,23 @@ def main() -> None:
     # Rows with no topics: still usable via title + venue + year
     train_df["venue"] = train_df["venue"].fillna("unknown").astype(str)
     test_df["venue"] = test_df["venue"].fillna("unknown").astype(str)
+    
+    # Convert numeric columns to proper types
+    numeric_cols_to_convert = [
+        "year",
+        "primary_topic_score",
+        "topic_1_score",
+        "topic_2_score",
+        "topic_3_score",
+        "keyword_1_score",
+        "keyword_2_score",
+        "keyword_3_score",
+    ]
+    for col in numeric_cols_to_convert:
+        if col in train_df.columns:
+            train_df[col] = pd.to_numeric(train_df[col], errors='coerce')
+        if col in test_df.columns:
+            test_df[col] = pd.to_numeric(test_df[col], errors='coerce')
 
     print(f"Train: {len(train_df)} | Test: {len(test_df)}")
     predictions, qwk_cv, _ = fit_predict(train_df, test_df, n_splits=args.splits)
@@ -181,5 +190,5 @@ def main() -> None:
     print(out.head(10))
 
 
-if __name__ == "__main__":
+if __name__ == "_main_":
     main()
